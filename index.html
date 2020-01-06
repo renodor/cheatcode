@@ -1,0 +1,2813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
+
+    <link rel="stylesheet" href="prism.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <!-- left nav -->
+        <aside class="col-md-3">
+          <nav class="navbar sticky sticky-top navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-burger" aria-controls="navbar-burger" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-burger"> 
+              <ul id="page-nav" class="navbar-nav flex-column navbar-dark nav-vertical">
+                <li class="nav-item">
+                  <a class="nav-link collapsed" data-toggle="collapse" href="#menu-html" role="button" aria-expanded="false" aria-controls="menu-html">HTML</a>
+                  <div class="collapse" id="menu-html" data-parent="#page-nav" style="">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#html-naming">Naming</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#html-boilerplate">HTML Boilerplate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#html-tables">HTML Tables</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#html-forms">HTML Forms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link collapsed" data-toggle="collapse" href="#menu-css" role="button" aria-expanded="false" aria-controls="menu-css">CSS</a>
+                  <div class="collapse menu-level-2 cool-scrollbar" id="menu-css" data-parent="#page-nav" style="">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-naming">CSS Naming</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-priority">Priority</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-units">CSS Units</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-import">Import CSS files</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-gradient-filter">Gradient Filter</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-positionning">Positionning in CSS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-display">Display</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-flexbox">Flexbox</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-float">Float</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-clear">Clear</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-box-model">The Box Model</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-margin-collapse">Margin Collapse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-overflow">Overflow</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-resetting-default">Resetting Default</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-border-box">Box Model: Border-box</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-visibility">Display None VS Visibility Hidden</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-rgb">RGB Color Model</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-hsl">HSL Color Model</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-typography">Typography</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-font-face">Font-face</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#css-grid">CSS Grid</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link collapsed" data-toggle="collapse" href="#menu-js" role="button" aria-expanded="false" aria-controls="menu-js">JAVASCRIPT</a>
+                  <div class="collapse menu-level-2 cool-scrollbar" id="menu-js" data-parent="#page-nav" style="">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-variables">Variables</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-math">Math</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-conditional-statements">Conditional Statement</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-functions">Functions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-arrow-functions">Arrow Functions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-scope">Scope</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-arrays">Arrays</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-for-loop">For Loop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-while-loop">While Loop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-do-while-loop">Do...While Loop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-high-order-functions">High-Order Functions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-iterators">Iterators</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-objects">Objects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-object-loops">Object Loops</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-getters-setters-methods">Getters & Setters Methods</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-factory-functions">Factory Functions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-destructured-assignment">Destructured Assignment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-built-in-object-methods">Built-in Object Methods</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-classes">Classes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-inheritance">Inheritance</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-static-methods">Static Methods</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-babel">Babel</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-modules">Modules</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-promises">Promises</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-then">Then Method</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-catch">Catch Method</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-chaining-multiple-promises">Chaining Multiple Promises</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-promises-all">Promises.all()</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-async-await">Async...Await</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-try-catch">Try...Catch</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-independent-promises">Independent Promises</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-await-promises-all">Await Promise.all()</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-http-requests">HTTP Requests</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-xhr-get-requests">XHR GET Requests</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-xhr-post-requests">XHR POST Requests</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-fetch-function">The Fetch Function</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#js-fetch-with-async-await-function">Fetch with Async...await</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#terminal" role="button">TERMINAL</a>
+                </li>
+              </ul>
+            </div>  
+          </nav>
+        </aside>
+
+
+        <!-- HTML -->
+        <article class="col-md-9">
+          <div id="html-container">
+            <h1>HTML</h1>
+
+            <section id="html-naming">
+              <h2 class="section-title">Naming</h2>
+
+              <div class="code-block">
+                <pre><code id="html-naming-code" class="language-html">&lt;tag attribute(name)="attribute(value)"&gt; content &lt;/tag&gt;</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#html-naming-code">COPY</button>
+              </div>
+            </section> 
+
+            <section id="html-boilerplate">
+              <h2 class="section-title">HTML Boilerplate</h2>
+                
+              <div class="code-block">
+                <pre><code id="html-boilerplate-code" class="language-markup">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;meta name="description" content=""&gt;
+
+
+    &lt;!-- Facebook Open Graph data --&gt;
+    &lt;meta property="og:title" content="" /&gt;
+    &lt;meta property="og:type" content="website" /&gt;
+    &lt;meta property="og:url" content="https://www.myurl.com/" /&gt;
+    &lt;meta property="og:image" content="" /&gt;
+    &lt;meta property="og:description" content="" /&gt;
+    &lt;meta property="og:site_name" content="" /&gt;
+
+    &lt;!-- Twitter Card data --&gt;
+    &lt;meta name="twitter:card" content=""&gt;
+    &lt;meta name="twitter:site" content="@mywebsite"&gt;
+    &lt;meta name="twitter:title" content=""&gt;
+    &lt;meta name="twitter:description" content=""&gt;
+    &lt;meta name="twitter:creator" content="@mywebsite"&gt;
+    &lt;meta name="twitter:image:src" content=""&gt;
+
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt;
+
+    &lt;!-- Font Awesome --&gt;
+    &lt;script src="https://kit.fontawesome.com/ae46c9edb9.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+    &lt;!-- My CSS --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+
+                <button class="btn btn-light copy-btn" data-clipboard-target="#html-boilerplate-code">
+                 COPY
+                </button>
+              
+              </div>
+
+            </section>
+
+            <section id="html-tables">
+              <h2 class="section-title">HTML Tables</h2>
+                
+              <div class="code-block">
+                <pre><code id="html-tables-code" class="language-markup">&lt;table&gt;
+   &lt;thead&gt; &lt;!-- table head --&gt;
+      &lt;tr&gt;
+         &lt;th&gt;xxx&lt;/th&gt;
+         &lt;th&gt;xxx&lt;/th&gt;
+      &lt;/tr&gt; &lt;!-- table row --&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt; &lt;!-- table body --&gt;
+      &lt;tr&gt;
+         &lt;td&gt;xxx&lt;/td&gt; &lt;!-- cell --&gt;
+         &lt;td colspan="2"&gt;xxx&lt;/td&gt; &lt;!-- merge 2 columns --&gt;
+         &lt;td rowspan="2"&gt;xxx&lt;/td&gt; &lt;!-- merge 2 rows --&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+   &lt;tfoot&gt;
+      &lt;tr&gt;
+         &lt;td&gt;xxx&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tfoot&gt; &lt;!-- table footer --&gt;
+&lt;/table&gt;</code></pre>
+
+                <button class="btn btn-light copy-btn" data-clipboard-target="#html-tables-code">
+                 COPY
+                </button>
+              
+              </div>
+
+            </section>
+
+            <section id="html-forms">
+              <h2 class="section-title">HTML Forms</h2>
+              
+              <p>A form is defined by a <span class="simple-code">&lt;form&gt;</span> tag. Inside you define :
+                  <ul>
+                    <li>An <span class="simple-code">action</span> = where to send the info</li>
+                    <li>A <span class="simple-code">method</span> = what to do when the form is submitted</li>
+                  </ul> 
+              </p>
+              <div class="code-block">
+                <pre><code id="html-forms-code" class="language-markup">&lt;form action="/example.html" method="POST"&gt;
+&lt;/form&gt;</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#html-forms-code">
+                 COPY
+                </button>
+              </div>
+              <br>
+              <p><span class="simple-code">&lt;input&gt;</span> tags allows to create fields where visitors can type information. Input tags must have different attributes:
+                  <ul>
+                    <li><span class="simple-code">name</span> = that is how you will identify it when the form is send</li>
+                    <li><span class="simple-code">value </span> = the value of the field & the placeholder value before the user type it (will be paired with the name).</li>
+                    <li><span class="simple-code">type</span> = determine how it will render :
+                      <ul>
+                        <li><span class="simple-code">text</span> = normal text field</li>
+                        <li><span class="simple-code">password</span> = field where what you type is hidden</li>
+                        <li><span class="simple-code">number</span> = restrict to number. You can add attributes:
+                          <ul>
+                            <li><span class="simple-code">step=1</span> = will create arrows inside the input and allows the user to increase/decrease numbers 1 by 1</li>
+                          </ul>
+                        </li>
+                        <li><span class="simple-code">range</span> = will create a slider. You can add attributes:</li>
+                          <ul>
+                            <li><span class="simple-code">min</span></li>
+                            <li><span class="simple-code">max</span></li>
+                            <li><span class="simple-code">step</span></li>
+                          </ul>
+                        <li><span class="simple-code">checkbox</span> = don't forget to put a value! (it will be invisible but this is what will be send to the form).  And then to associate it to a label (so that the user knows what this checkbox correspond to)</li>
+                        <li><span class="simple-code">radio</span> = to group radio together they must have the same name (and thus you can only select one)</li>
+                        <li><span class="simple-code">text</span> and <span class="simple-code">list=id</span> = will pair the input to a datalist with the same id</li>
+                        <li><span class="simple-code">submit</span> = the value argument will be the display text of the button</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+                <p><span class="simple-code">&lt;label&gt;</span> tags are paired with input and serve as their "display name". You type the name of the label between the opening and closing tag and you pair it with an input with the attribute <span class="simple-code">for</span>:
+                  <ul>
+                    <li>The input must have an <span class="simple-code">id</span>, and the label must have the same <span class="simple-code">for</span></li>
+                    <li>Important for ex when using checkbox or radio button. Because when you click on the label it will check the box</li>
+                  </ul>
+                </p>
+                <div class="code-block">
+                <pre><code id="html-forms-label-code" class="language-markup">&lt;form action="/example.html" method="POST"&gt;
+  &lt;label for="meal"&gt;What do you want to eat?&lt;/label&gt;
+  &lt;input type="text" name="food" value="Already pre-filled" id="meal"&gt;
+&lt;/form&gt;</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#html-forms-label-code">COPY</button>
+                </div>
+                <br>                
+                <p><span class="simple-code">&lt;select&gt;</span> tag allows you to create dropdown lists. Inside the select tags you need <span class="simple-code">&lt;options&gt;</span> tags each with a <span class="simple-code">value</span> with your different options:
+                  <ul>
+                    <li>The <span class="simple-code">value</span> of<span class="simple-code">&lt;option&gt;</span> is the text that will be send to the form</li>
+                    <li>The text between the opening and closing <span class="simple-code">&lt;options&gt;</span> tag is the displayed text</li>
+                  </ul>
+                </p>
+                <div class="code-block">
+                  <pre><code id="html-form-select-code" class="language-markup">&lt;form action="/example.html"&gt;
+    &lt;label for="lunch"&gt;What's for lunch?&lt;/label&gt;
+    &lt;select name="lunch" id="lunch"&gt;
+      &lt;option value="pizza"&gt;Pizza&lt;/option&gt;
+      &lt;option value="pizza"&gt;Curry&lt;/option&gt;
+      &lt;option value="pizza"&gt;Salad&lt;/option&gt;
+      &lt;option value="pizza"&gt;Ramen&lt;/option&gt;
+      &lt;option value="pizza"&gt;Tacos&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+
+                  <button class="btn btn-light copy-btn" data-clipboard-target="#html-form-select-code">COPY</button>
+                </div>
+                <br>
+                <p><span class="simple-code">&lt;datalist&gt;</span> tag also create a dropdown but inside an text field, so that users can type into it to easily find options. Inside the datalist you put  <span class="simple-code">&lt;options&gt;</span> tags. The <span class="simple-code">&lt;input&gt;</span> tag where the <span class="simple-code">&lt;datalist&gt;</span> is must have a <span class="simple-code">list</span> attribute with the value of the datalist id
+                </p>
+
+                <div class="code-block">
+                  <pre><code id="html-form-datalist-code" class="language-markup">&lt;form action="/example.html"&gt;
+&lt;label for="city"&gt;Ideal city to visit?&lt;/label&gt;
+  &lt;input type="text" list="cities" id="city" name="city"&gt;
+  &lt;datalist id="cities"&gt;
+    &lt;option value="New Yor City"&gt;&lt;/option&gt;
+    &lt;option value="Tokyo"&gt;&lt;/option&gt;
+    &lt;option value="Barcelona"&gt;&lt;/option&gt;
+    &lt;option value="Mexico"&gt;&lt;/option&gt;
+    &lt;option value="Bandol"&gt;&lt;/option&gt;
+  &lt;/datalist&gt;
+&lt;/form&gt;</code></pre>
+                  <button class="btn btn-light copy-btn" data-clipboard-target="#html-form-datalist-code">COPY</button>
+                </div>
+
+                <br>
+                <p><span class="simple-code">&lt;textarea&gt;</span> tags are used to create a bigger text field. If you want a default text you need to include it between the opening and closing textarea tags. This field can take arguments:
+                </p>
+                <ul>
+                  <li><span class="simple-code">rows</span>: determine the width of the field</li>
+                  <li><span class="simple-code">cols</span>: determine the height</li>
+                </ul>
+
+            </section>
+          </div>
+
+          <div id="css-container">
+          <h1>CSS</h1>
+            <section id="css-naming">
+              <h2 class="section-title">Naming</h2>
+              <div class="code-block">
+                <pre><code id="css-naming-code" class="language-css">selector {
+ property: value;
+ property: value;
+ property: value;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-naming-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="css-priority">
+              <h2 class="section-title">Priority</h2>
+
+              <p><span class="simple-code">id</span> > <span class="simple-code">class</span> > <span class="simple-code">element</span> >>> The most specific is always the one taken into account</p>
+              <p>The last CSS sheet style link will have priority against the one placed above. Same for JS. (So for example always put your own CSS after jQuery or Boostrap)</p>
+            </section>
+
+            <section id="css-units">
+              <h2 class="section-title">CSS Units</h2>
+              
+              <p><b>vh</b> = Viewport height (screen height)
+                  <ul>
+                    <li>1vh = 1% of viewport height</li>
+                    <li>100vh = 100% of viewport height</li>
+                  </ul> 
+              </p>
+
+              <p><b>vw</b> = Viewport width (screen width)
+                  <ul>
+                    <li>1vh = 1% of viewport width</li>
+                    <li>100vh = 100% of viewport width</li>
+                  </ul> 
+              </p>
+              <p><b>em</b> = Relative to the font-size of the element (2em = 2 times the size of the current font)</p>
+              <p><b>rem</b> = Relative to the font-size of root element (2em = 2 times the size of the root font)</p>
+              <p><b>%</b> = Relative to the parent element</p>
+            </section> 
+
+            <section id="css-import">
+              <h2 class="section-title">Import</h2>
+              <p>You can import a CSS file within another CSS file:</p>
+              <div class="code-block">
+                <pre><code id="css-import-code" class="language-css">@import url("components/avatar.css");</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-import-code">COPY</button>
+              </div>
+
+              <p>You can import a CSS file from an external source:</p>
+              <div class="code-block">
+                <pre><code id="css-import-external-code" class="language-css">@import url("components/avatar.css");</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-import-external-code">COPY</button>
+              </div>
+
+              <p>So a good practice is to link your <b>index.html</b> to one <b>home.css</b> file, and put all the other CSS sheets inside this same file :
+                <ul>
+                  <li><span class="simple-code">@import url(style1.css);</span></li>
+                  <li><span class="simple-code">@import url(style2.css);</span></li>
+                  <li><span class="simple-code">@import url(style3.css);</span></li>
+                  <li>etc...</span></li>
+                </ul>
+              </p>
+            </section>
+
+            <section id="css-gradient-filter">
+              <h2 class="section-title">Gradient Filter</h2>
+              <p>The format of a CSS gradient filter:</p>
+              <div class="code-block">
+                <pre><code id="css-gradient-code" class="language-css">background: linear-gradient(angle,
+                            start-color start-point,
+                            end-color end_point),
+            url('background.jpg')</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-gradient-code">COPY</button>
+              </div>
+
+              <p>Example:</p>
+              <div class="code-block">
+                <pre><code id="css-gradient-ex-code" class="language-css">background: linear-gradient(135deg,
+                            yellow 0%,
+                            green 50%),
+            url('background.jpg')</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-gradient-ex-code">COPY</button>
+              </div>
+            </section>  
+
+            <section id="css-positionning">
+              <h2 class="section-title">Positionning in CSS</h2>
+              <p>By default, blocks will stack on top of each other. Then the <span class="simple-code">position</span> propriety can take those values:</p>
+              <ul>
+                <li><span class="simple-code">static</span> (default)</li> 
+                <li><span class="simple-code">relative</span>: relative to his "static" / "normal" / "default" position. (It is not relative to its parent element). So if I then use a proprieties like <span class="simple-code">top</span> or <span class="simple-code">left</span>, it will move the element from the top and from the left of his default static position. It is also used to pin an element on the page (so that its children elements can be <span class="simple-code">positioned: absolute</span> relatively to it)</li> 
+                <li><span class="simple-code">absolute</span>: is absolute compared to its 1st positioned parent. If there are no positioned parent, it will be absolute compared to the body. So you basically remove it from the flow (other elements of the page will ignore it and act like it was not here)</li>
+              </ul>
+              <p>So a common pattern is:</p>
+              <ul>
+                <li>I create a first div with <span class="simple-code">position: relative</span> (not because I want to move it but just because I want to pin it)</li> 
+                <li>I put an inner div inside my div with <span class="simple-code">position: absolute</span>. So it will be positioned relatively to my parent div. And now I can use left and right to position it within my div</li>
+              </ul>
+
+              <div class="code-block">
+                <pre><code id="css-positionning-code" class="language-css">#relative {
+position: relative;
+}
+
+#absolute {
+position: absolute;
+top: 10px;
+right: 10px;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-positionning-code">COPY</button>
+              </div>
+
+              <p><b>Offset properties:</b> <span class="simple-code">left right top bottom</span>. Can be set in  px, em, or %. Will not work if the position of the element is <span class="simple-code">static</span></p>
+
+              <p><b>Z-index:</b> greater <span class="simple-code">z-index</span> will be in front of lower <span class="simple-code">z-index</span>. It doesn't work on static elements.</p>
+            </section>
+
+            <section id="css-display">
+              <h2 class="section-title">Display</h2>
+              <p>Display propriety dictate if an element can share horizontal space with others or not</p>
+              <ul>
+                <li><span class="simple-code">inline</span>: only take the horizontal space of its width (default for tags like <span class="simple-code">&lt;em&gt; &lt;strong&gt; &lt;a&gt;</span> etc…). Inline elements cannot be altered in size by height and width css proprieties.</li>
+                <li><span class="simple-code">block</span>: will fill the entire horizontal space of the page. Their height by default is the height of their content. But their height and width can by modified by CSS proprieties. (default for tags like <span class="simple-code">&lt;h1&gt; &lt;h6&gt; &lt;p&gt; &lt;div&gt; &lt;footer&gt;</span> …)</li>
+                <li><span class="simple-code">inline-block</span>: combine properties of both: they will appear next to each other but you can specify their dimensions using width and height (by default for images)</li>
+              </ul>
+            </section>
+
+            <section id="css-flexbox">
+              <h2 class="section-title">Flexbox: to align</h2>
+              <ul>
+                <li>Your flexbox needs the <span class="simple-code">display: flex</span> property</li> 
+                <li>Flexbox property:</li>
+                  <ul>
+                    <li><span class="simple-code">Justify-content: space-around</span>: will distributes items equally horizontally</li>
+                    <li><span class="simple-code">Justify-content: space-between</span>: will equally distribute the space between my items (the first and last one will stay stick to the flexbox)</li>
+                    <li><span class="simple-code">align-items: center</span>: will align it vertically (even if they don't have the same height)</li>
+                  </ul>
+                <li>You then defines <span class="simple-code">flex-items</span> with the <span class="simple-code">flex</span> property that takes 3 values:</li>
+                  <ul>
+                    <li><span class="simple-code">0</span> = cannot grow / <span class="simple-code">1</span> = can grow (if you do it you can put width = auto)</li>
+                    <li><span class="simple-code">0</span> = cannot shrink / <span class="simple-code">1</span> = can shrink</li>
+                    <li><span class="simple-code">200px</span> = width</li>
+                  </ul>
+                <li>You can then use the <span class="simple-code">:first-child</span> and <span class="simple-code">:last-child</span> selectors</li>
+              </ul>
+              <p>Example:</p>
+              <div class="code-block">
+                <pre><code id="css-flexbox-code" class="language-css">.flex {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.flex-item {
+flex: 0 0 200px;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-flexbox-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="css-float">
+              <h2 class="section-title">Float</h2>
+              <p><span class="simple-code">float: left</span> or <span class="simple-code">float: right</span> will move an element as far as left/right as possible. It must have a specified width (otherwise it will have the full width of its containing element and moving it right or left will not have any visible results).</p>
+              <p>A floating element will be removed from the flow. Which means for example that if it is inside a div, this div will lose its height.</p>
+            </section>
+
+            <section id="css-clear">
+              <h2 class="section-title">Clear</h2>
+              <p>When an element is floating, if it doesn't take full width of the page, so following elements will come next to it. To avoid that you can use the propriety <span class="simple-code">clear</span> (<span class="simple-code">left</span>, <span class="simple-code">right</span> or <span class="simple-code">both</span>) on the following elements. It will prevent them to go next to the floating element.</p>
+              <ul>
+                <li><span class="simple-code">left</span>: the left side of the element will not touch any other element within the same containing element</li>
+                <li><span class="simple-code">right</span>: the right side of the element will not touch any other element within the same containing element</li>
+                <li><span class="simple-code">both</span>: neither sides of the element will touch any other element within the same containing element</li>
+                <li><span class="simple-code">none</span>: the can touch either sides</li>
+              </ul>
+            </section>
+
+
+            <section id="css-box-model">
+              <h2 class="section-title">The Box Model</h2>
+              
+              <img src="img/diagram-boxmodel.svg" alt="">
+              <br><br>
+              <p>Border style values : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values" target="_blank">Moz doc</a></p>
+              <p><span class="simple-code">div {margin: 0 auto;}</span> The div must have a fixed width, and it will center it  in its containing elements.</p>
+            </section>
+
+            <section id="css-margin-collapse">
+              <h2 class="section-title">Margin Collapse</h2>
+              <p>Horizontal margins (let and right) between two elements are added together to define the space between those elements:</p>
+              <div class="code-block">
+                <pre><code id="css-margin-collapse-code" class="language-css">#img-one {
+  margin-right: 20px;
+}
+
+#img-two {
+  margin-left: 20px;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-margin-collapse-code">COPY</button>
+              </div>
+            
+              <p>>>> There will be 40px of horizontal space between those two elements.</p>
+              <p>On the contrary, vertical margin collapse. It means that they are packed together and thus the larger of the two vertical margins will set the distance between two elements:</p>
+              <div class="code-block">
+                <pre><code id="css-margin-collapse-2-code" class="language-css">#img-one {
+  margin-top: 30px;
+}
+
+#img-two {
+  margin-bottom: 20px;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-margin-collapse-2-code">COPY</button>
+              </div>
+
+              <p>>>> There will be 30px of vertical space between those two elements (and not 50px)</p>
+            </section>
+
+            <section id="css-overflow">
+              <h2 class="section-title">Overflow</h2>
+              <p>The <span class="simple-code">overflow</span> property allows you to control what happens to a content if it spills or overflows outside its box :</p>
+              <ul>
+                <li><span class="simple-code">hidden</span> : any content that overflows will be hidden from view.</li>
+                <li><span class="simple-code">scroll</span> : scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling.</li>
+                <li><span class="simple-code">visible</span> : the overflow content will be displayed outside of the containing element. (This is the default value).</li>
+              </ul>
+              <p>The overflow is set on a parent element to affect its child elements.</p>
+            </section>
+
+            <section id="css-resetting-default">
+              <h2 class="section-title">Resetting Default</h2>
+              <p>All web browsers have default stylesheet values (known as "user agent"). Often set a default value for padding and margin for example. So it is useful to reset those values with the <span class="simple-code">*</span> propriety: </p>
+              
+              <div class="code-block">
+                <pre><code id="css-resetting-default-code" class="language-css">* {
+  margin: 0;
+  padding: 0;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-resetting-default-code">COPY</button>
+              </div>
+              <p>(When you set margin or padding to 0 you don't need any unit measurement).</p>
+              <p>Other proprieties may be useful to reset: <a href="https://discuss.codecademy.com/t/are-margin-and-padding-values-the-only-ones-that-need-reset/365556" target="_blank">Code Ac</a></p>
+            </section>
+
+            <section id="css-border-box">
+              <h2 class="section-title">Box Model: Border-Box</h2>
+              <p>By setting the default model of all HTML elements to border-box, with the "box-sizing" propriety like that:</p>
+              <div class="code-block">
+                <pre><code id="css-border-box-code" class="language-css">* {
+  box-sizing: border-box;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-border-box-code">COPY</button>
+              </div>
+              <p>You define a new box model called "border-box" that have the following proprieties:</p>
+              <ul>
+                <li>The border thickness will be included inside the overall width and height of the box</li>
+                <li>The padding will be included inside the overall width and height of the box</li>
+                <li>So the height and width of the box will remained fixed (even if padding and border changes)</li>
+              </ul>
+              <img class="centered-img" style="width:100%" src="img/border-box-model.png" class="centered-img" alt="">
+              <br>
+              <p>Overall it makes that the width and height of your element is not affected by the padding and border.</p> 
+            </section>
+
+            <section id="css-visibility">
+              <h2 class="section-title">Display None VS Visibility Hidden</h2>
+              <p>An element with <span class="simple-code">display: none</span> will be completely removed from the web page. An element with <span class="simple-code">visibility: hidden</span>, however, will not be visible on the web page, but the space reserved for it will.</p> 
+            </section>
+
+            <section id="css-rgb">
+              <h2 class="section-title">RGB Color Model</h2>
+              <p><b>RGB</b> = red, green, blue. Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%). The synthax is <span class="simple-code">rgb(red, green, blue)</span></p>
+              <p><b>RGBA</b> = red, green, blue, alpha. Alows you to add a forth value between 0.0 and 1.0 define the transparency/opacity of your color. So <span class="simple-code">color:transparent</span> = <span class="simple-code">color: rgba(0, 0, 0, 0)</span></p>
+              <p>In RGB system, if you put the same value for the 3 colors, you are on the grey scale. At 0 you are totally black and at 255 you are totally white. And in between you have greyscales:</p>
+              <img class="centered-img" style="width: 70%" src="img/rgb-greyscale.png" alt="">
+            </section>  
+
+            <section id="css-hsl">
+              <h2 class="section-title">HSL Color Model</h2>
+              <p><b>HSL</b> = hue, saturation, lightness</p>
+              <p>the synthax is: <span class="simple-code">color: hsl(120, 60%, 70%);</span> where:</p>
+              <ul>
+                <li>first number = the degree of the hue (= an angle on a color wheel. Red = 0, Green = 120, Blue = 240)</li>
+                <li>second number = the saturation % = intensity or purity of the color (0% = grey, 100% = richest color)</li>
+                <li>third number = lightness % = how light or dark the color is (0% = black, 50% = normal, 100% = white)</li>
+              </ul>
+              <p>>> It is useful if you just want to change the lightness or saturation of a color (more complex in RGB). Also usfull if you whant to have a set of colors that work well together: same saturation and lightness.</p>
+              <p><b>HSLA</b> = as for rgb, you can add a last argument between 0 and 1 to add transparency to your color</p>
+              <img class="centered-img" style="width: 50%" src="img/hsl-wheel.png" alt="">
+            </section>
+
+            <section id="css-typography">
+              <h2 class="section-title">Typography</h2>
+              <p>In CSS you have the system of fallback fonts:</p>
+              <div class="code-block">
+                <pre><code id="css-fallback-fonts-code" class="language-css">h1 {
+font-family: "Garamond", "Times", serif;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-fallback-fonts-code">COPY</button>
+              </div>
+              <p>>>> This says "use Garamond, if not available, use Times, if not available, any serif font pre-installed on the user device.</p>
+
+              <p><b>Font types</b> are:
+                <ul>
+                  <li><span class="simple-code">serif</span></li>
+                  <li><span class="simple-code">san-serif</span></li>
+                  <li><span class="simple-code">monospace</span></li>
+                </ul>
+              </p>
+
+              <p><b>Font weight</b> values range from 100 to 900 and can only be multiples of 100 (100, 200, 500...)</p>
+
+              <p><b>Font proprieties:</b>
+                <ul>
+                  <li><span class="simple-code">font-style: italic;</span></li>
+                  <li><span class="simple-code">word-spacing: Xem;</span> (by default = 0.25em)</li>
+                  <li><span class="simple-code">letter-spacing: Xem;</span></li>
+                  <li><span class="simple-code">text-transform:</span></li>
+                  <ul>
+                    <li><span class="simple-code">uppercase</span></li>
+                    <li><span class="simple-code">lowercase</span></li>
+                    <li><span class="simple-code">capitalize</span></li>
+                  </ul>
+                  <li><span class="simple-code">line-height</span> (modify the leading of the text)</li>
+                  <ul>
+                    <li>can take an unitless value, like "1.2". (It will define line height according to font size)</li>
+                    <li>can take a unite value in px, %, ems, rems…</li>
+                  </ul>
+                </ul>
+              </p>
+              <img class="centered-img" style="width: 70%" src="img/line-height.png" alt="">
+            </section>
+
+            <section id="css-font-face">
+              <h2 class="section-title">Font-face</h2>
+              <p>You can use <span class="simple-code">font-face</span> to load any font you want into the browser of your user. You can use it with your own font in your own server or with an external source. You need to specify :
+                <ul>
+                  <li>the name of the font</li>
+                  <li>the direction of the font file</li>
+                  <li>the format of the font file (Different browsers support different font types, so providing multiple font file options will support more browsers).</li>
+                </ul>
+              </p>
+
+              <div class="code-block">
+                <pre><code id="css-font-face-code" class="language-css">@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto.woff2) format('woff2'),
+       url(fonts/Roboto.woff) format('woff'),
+       url(fonts/Roboto.tff) format('truetype');
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-font-face-code">COPY</button>
+              </div>
+
+              <p>You can use font-face with <b>Google Font</b>. You just have to type directly the URL of the font you want to use following this synthax: <a target="_blank" href="https://fonts.googleapis.com/css?family=Space+Mono:400,700">https://fonts.googleapis.com/css?family=Space+Mono:400,700</a> and just copy and paste the <span class="simple-code">font-face</span> code of the /*latin*/ font on your CSS file.</p>
+            </section>
+
+            <section id="css-grid">
+              <h2 class="section-title">CSS Grid</h2>
+              <p>To work a grid needs a grid container and grid items.</p>
+              <p><b>Grid containers:</b> must have the propriety: <span class="simple-code">display: grid;</span></p>
+              <p>Inside containers you define <b>columns:</b>
+                <ul>
+                  <li>By default grids contain 1 column</li>
+                  <li>Then you can define the columns of a grid with the propriety: <span class="simple-code">grid-template-columns: 200px 300px;</span> >>> Meaning there will be 2 columns, the first one of 300px and the second one of 300px</li>
+                  <li>You can define column width in px, % (of the total grid width), and you can mix between units in the same grid</li>
+                </ul>
+              </p>
+              <div class="code-block">
+                <pre><code id="css-grid-columns-code" class="language-css">.grid {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 200px 300px;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-grid-columns-code">COPY</button>
+              </div>
+
+              <p>Inside containers you also define <b>rows:</b>
+                <ul>
+                  <li>Work the same way as columns, with the propriety : <span class="simple-code">grid-template-rows: 200px 300px;</span> (only that it defines the height instead of the width. So if you define it in %, it is according to grid height)</li>
+                  <li>By default, rows are sized to fit inside the grid</li>
+                </ul>
+              </p>
+
+              <p>You can also use one propriety for <b>both rows and colums: </b><span class="simple-code">grid-template</span></p>
+              <div class="code-block">
+                <pre><code id="css-grid-template-code" class="language-css">.grid {
+  display: grid;
+  width: 1000px;
+  height: 500px;
+  grid-template: 200px 300px / 20% 10% 70%;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-grid-template-code">COPY</button>
+              </div>
+              <p>>>> Before the / are rows, after the / are columns.</p>
+
+              <p><b>Fractions:</b> The <span class="simple-code">fr</span> unit define the size of columns and rows as a fraction of grid length.</p>
+              <p><u>Ex:</u> <span class="simple-code">grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;</span> >>> first row will be 2/4 of the grid, second row 1/4, third row 1/4. First column will be 1/5, second 3/5, third 1/5.</p>
+              <p>If you use <span class="simple-code">fr</span> combined with other units ; the <span class="simple-code">fr</span> will represent a fraction of the available space.</p>
+
+              <p><b>Repeat:</b> You can use the repeat fonction like that: <span class="simple-code">grid-template-columns: repeat(3, 100px);</span> >>> is the same as writting : <span class="simple-code">grid-template-columns: 100px 100px 100px;</span></p>
+              <p>You can use repeat with 2 values : <span class="simple-code">grid-template-columns: repeat(2, 20px 50px)</span> >>> first and third columns will be 20px, second and fourth 50px.</p>
+
+              <p><b>Minmax:</b> <span class="simple-code">grid-template-columns: 100px minmax(100px, 500px) 100px;</span> >>> the 2nd column will vary between 100px and 500px depending on the size of the overall grid. (For minmax to work your grid can't have a fixed size).</p>
+
+              <p><b>Grid Gap:</b>
+                <ul>
+                  <li><span class="simple-code">grid-row-gap: 10px</span> > will add 10px between your rows</li>
+                  <li><span class="simple-code">grid-column-gap: 10px</span> > will add 10px between your columns</li>
+                  <li><span class="simple-code">grid-gap: 20px 10px</span> > will add 20px between rows and 10px between columns</li>
+                </ul>
+              </p>
+
+              <p><b>Grid items:</b></p>
+              <p><span class="simple-code">grid-row-start</span> and <span class="simple-code">grid-row-end</span> make a single grid items take up multiple rows. Same for <span class="simple-code">grid-column-start</span> and <span class="simple-code">grid-column-end</span>.</p>
+              <div class="code-block">
+                <pre><code id="css-grid-item-code" class="language-css">.item {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-grid-item-code">COPY</button>
+              </div>
+              <p>>>> The element <span class="simple-code">.item</span> will starts at row 1 and stops at row 3 (so it will take the space of 2 rows). Same for columns.</p>
+              <p>You can also use it like that: <span class="simple-code">grid-row: 1 / 3</span> and <span class="simple-code">grid-column: 1 / 3</span> >>> Will start at 1 and stop at 3.</p>
+
+              <p>You can also use the <span class="simple-code">span</span> kw: <span class="simple-code">grid-column: 4 / span 2;</span> >>> means item will starts at column 4 and take 2 spaces. (So stops at 6).</p>
+              <p>So all the following statements are exactly the same:
+                <ul>
+                  <li><span class="simple-code">grid-column: 4 / span 2;</span></li>
+                  <li><span class="simple-code">grid-column: 4 / 6;</span></li>
+                  <li><span class="simple-code">grid-column-start: span 2; grid-column-end: 6;</span></li>
+                </ul>
+              </p>
+
+              <p><b>Grid area:</b> <span class="simple-code">grid-area: w / x / y / z</span> allows you to define all your rows and columns at the same time:
+                <ul>
+                  <li>w = grid-row-start</li>
+                  <li>x = grid-column-start</li>
+                  <li>y = grid-row-end</li>
+                  <li>z = grid-column-end</li>
+                </ul>
+              </p>
+              <p>So <span class="simple-code">grid-area: 2 / 3 / 4 / span 5;</span> >>> means this item will start at row 2 and end at row 4. It will start at column 3 and take 5 column space.</p>
+
+              <p><b>Grid template areas:</b> <span class="simple-code">grid-template-areas</span> property allows you to name sections of your webpage to use it as values of a grid.</p>
+              <p><u>Ex:</u></p>
+
+              <div class="code-block">
+                <pre><code id="css-grid-template-areas-html-code" class="language-markup">&lt;div class="container"&gt;
+  &lt;header&gt;Wielcom!&lt;/header&gt;
+  &lt;nav&gt;Links&lt;/nav&gt;
+  &lt;section class="info"&gt;Info!&lt;/section&gt;
+  &lt;section class="services"&gt;Services!&lt;/section&gt;
+  &lt;footer&gt;Contact us!&lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-grid-template-areas-html-code">COPY</button>
+              </div>
+
+              <div class="code-block">
+                <pre><code id="css-grid-template-areas-css-code" class="language-css">.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "head head"
+                       "nav nav"
+                       "info services"
+                       "footer footer";
+  grid-template-rows: 300px 120px 800px 120px;
+  grid-template-columns: 1fr 3fr;
+}
+
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.info {
+  grid-area: info;
+}
+
+.services {
+  grid-areas: services;
+}
+
+footer {
+  grid-area: footer;
+}</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#css-grid-template-areas-css-code">COPY</button>
+              </div>
+
+              <p>>>> With this code you build the following grid:
+                <ul>
+                  <li><span class="simple-code">head</span> will take 1st row and 2 columns</li>
+                  <li><span class="simple-code">nav</span> will take 2nd row and 2 columns</li>
+                  <li><span class="simple-code">info</span> will take 3rd row and left column</li>
+                  <li><span class="simple-code">service</span> will take 3rd row and right column</li>
+                  <li><span class="simple-code">footer</span> will take 4th row and 2 columns</li>
+                </ul>
+              </p>
+              <p>(Don't forget to declare each elements with the <span class="simple-code">grid-area</span> propriety)</p>
+
+              <p><b>Justify Items: </b>allows you to align items inside the grid area. Can take following values:
+                <ul>
+                  <li><span class="simple-code">start</span> = align items to the left side of the grid area</li>
+                  <li><span class="simple-code">end</span> = align items to the right side of the grid area</li>
+                  <li><span class="simple-code">center</span> = align items to the center of the grid area</li>
+                  <li><span class="simple-code">stretch</span> = stretch all items to fill the grid area</li>
+                  <li>... <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout#Justifying_Items_on_the_Inline_or_Row_Axis" target="_blank">and more</a></li>
+                </ul>
+              </p>
+
+              <p><b>Justify Content: </b>allows to position an entire grid within its parent element. Can take following values:
+                <ul>
+                  <li><span class="simple-code">start</span> = align the grid to the left side of the grid container</li>
+                  <li><span class="simple-code">end</span> = align the grid to the right side of the grid container</li>
+                  <li><span class="simple-code">center</span> = align the grid to the center of the grid container</li>
+                  <li><span class="simple-code">stretch</span> = stretch the grid items to increase the size of the grid to expand horizontally across the container</li>
+                  <li><span class="simple-code">space-around</span> = includes an equal amount of space on each side of a grid element (resulting in double the amount of space between elements as there is before the first and after the last element)</li>
+                  <li><span class="simple-code">space-between</span> = includes an equal amount of space between grid items but no space at either end</li>
+                  <li><span class="simple-code">space-evenly</span> = places an even amount of space between grid items and at either end</li>
+                  <li>... <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout#Aligning_the_grid_tracks_on_the_block_or_column_axis" target="_blank">and more</a></li>
+                </ul>
+              </p>
+
+              <p><b>Align Items: </b>is the equivalent of <span class="simple-code">justify-items</span> but it align vertically. It can take following values:
+                <ul>
+                  <li><span class="simple-code">start</span> = align items at the top of the grid area</li>
+                  <li><span class="simple-code">end</span> = align items at the bottom of the grid area</li>
+                  <li><span class="simple-code">center</span> = align items at the center of the grid area</li>
+                  <li><span class="simple-code">stretch</span> = stretch all items to fill the grid area</li>
+                  <li>... <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout#Aligning_items_on_the_block_or_column_Axis" target="_blank">and more</a></li>
+                </ul>
+              </p>
+
+              <p><b>Align Content: </b> is the equivalent of <span class="simple-code">justify-content</span> but it aligns vertically. It can take following values:
+                <ul>
+                  <li><span class="simple-code">start</span> = align the grid at the top of the grid container</li>
+                  <li><span class="simple-code">end</span> = align the grid at the bottom of the grid container</li>
+                  <li><span class="simple-code">center</span> = center the grid vertically in the grid container</li>
+                  <li><span class="simple-code">stretch</span> = stretch the grid items to increase the size of the grid to expand vertically across the container</li>
+                  <li><span class="simple-code">space-around</span> = includes an equal amount of space on each side of a grid element (resulting in double the amount of space between elements as there is before the first and after the last element)</li>
+                  <li><span class="simple-code">space-between</span> = includes an equal amount of space between grid items but no space at either end</li>
+                  <li><span class="simple-code">space-evenly</span> = places an even amount of space between grid items and at either end</li>
+                  <li>... <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout#Aligning_the_grid_tracks_on_the_block_or_column_axis" target="_blank">and more</a></li>
+                </ul>
+              </p>
+
+              <p><b>Justify Self and Align Self:</b>
+                <ul>
+                  <li><span class="simple-code">justify-self</span> = specifies how an individual element should position itself horizontally</li>
+                  <li><span class="simple-code">align-self</span> = specifies how an individual element should position itself vertically </li>
+                  <li>It can take similar values than <span class="simple-code">align-items</span> and <span class="simple-code">justify-items</span></li>
+                  <li>It will override <span class="simple-code">align-items</span> or <span class="simple-code">justify-items</span></li>
+                </ul>
+              </p>
+
+              <p><b>Implicit Grid</b></p>
+              <p>If you can't define in advance how many rows/columns you will have on your grid, the implicit grid takes over. Default rules of the implicit grid are:
+                <ul>
+                  <li>Items fill up rows first, adding new rows as necessary</li>
+                  <li>New grid rows will only be tall enough to contain the content within them</li>
+                </ul>
+              </p>
+              <p>You can modify those default behaviors with the following proprieties:
+                <ul>
+                  <li><span class="simple-code">grid-auto-rows</span> = specifies the height of implicitly added grid rows</li>
+                  <li><span class="simple-code">grid-auto-columns</span> = specifies the width of implicitly added grid columns</li>
+                  <li>It can take <span class="simple-code">px</span>, <span class="simple-code">%</span>, <span class="simple-code">fr</span> and the <span class="simple-code">repeat()</span> function</li>
+                </ul>
+              </p>
+              <p>With <span class="simple-code">grid-auto-flow</span> you can also specify if you want new elements to be added to rows or columns. It can takes following values:</p>
+                <ul>
+                  <li><span class="simple-code">row</span> = new elements should fill rows from left to right and create new rows when there are too many elements (default)</li>
+                  <li><span class="simple-code">columns</span> = new elements should fill columns from top to bottom and create new columns when there are too many elements</li>
+                  <li><span class="simple-code">dense</span> = invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added</li>
+                  <li>You can pair <span class="simple-code">row</span> and <span class="simple-code">column</span> with <span class="simple-code">dense</span> = <span class="simple-code">grid-auto-flow: row dense;</span></li>
+                </ul>
+            </section>          
+          </div>
+
+          <div id="javascript-container">
+            <h1>JAVASCRIPT</h1>
+
+            <p><a href="https://caniuse.com/" target="_blank">https://caniuse.com/</a> is a website where you can see the compatibility of some code features with all different browsers.</p>
+
+            <section id="js-variables">
+              <h2 class="section-title">Variables</h2>
+              <p><span class="simple-code">var</span> = normal variable (old naming)</p>
+              <p><span class="simple-code">let</span> = variable that can be modified</p>
+              <p><span class="simple-code">const</span> = constant variable. Can't be modified</p>
+
+              <u>Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-variable-code" class="language-javascript">let favFood = "Pizza";
+console.log(favFood) // Will return "Pizza"
+favFood = "Pasta"
+console.log(favFood); // Will return "Pasta"
+
+const name = "Renaud";
+console.log(name); // Will return "Renaud"
+name = "Pas Renaud"
+console.log(favFood); // Will return "TypeError"</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-variable-code">COPY</button>
+              </div>
+
+              <p><b>Tips: </b><span class="simple-code">XXX = XXX + 1</span> can also be written : <span class="simple-code">XXX += 1</span>
+              <br>Same for <span class="simple-code">-=</span>, <span class="simple-code">*=</span>, <span class="simple-code">/=</span></p>
+              <p>Same for <span class="simple-code">++</span>, <span class="simple-code">--</span>, <span class="simple-code">//</span>, <span class="simple-code">**</span> it means adding, subtract, divise or multiply by 1</p>
+
+              <p><b>String Interpolation:</b> Allows you to insert a variable within a string without using the "+". For that you need to wrap your string with <span class="simple-code">`</span></p>
+
+              <div class="code-block">
+                <pre><code id="js-string-interpolation-code" class="language-javascript">var myPet = "armadillo";
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-string-interpolation-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="js-math">
+              <h2 class="section-title">Math</h2>
+              <p>In JavaScript, to get a random number between 0 and 1, use the <span class="simple-code">Math.random()</span> function : <span class="simple-code">console.log(Math.random());</span> >>> will return for ex : 0.5408145050563944
+              <p>Then if you want a random number between 1 and 10, just multiply the result of <span class="simple-code">Math.random</span> by 10, then round up or down:</p>
+                <ul>
+                  <li><span class="simple-code">Math.floor(Math.random() * 10)</span> >> will round down to a whole number</li>
+                  <li><span class="simple-code">Math.ceil(Math.random() * 10)</span> >> will round up to a whole number</li>
+                  <li><span class="simple-code">Math.round(Math.random() * 10)</span> >> will round to the nearest whole number</li>
+                </ul>
+              </p>
+            </section>
+
+            <section id="js-conditional-statements">
+              <h2 class="section-title">Conditional Statements</h2>
+              <p><b>Truthy / Falsy Values: </b> If you use an <span class="simple-code">if</span> on a non-bolean value (a string or a number for example), this value is neither "true" nor "false". But it is "truthy" or "falsy":
+                <ul>
+                  <li>It is "truthy", so will return <span class="simple-code">true</span> if : it exists / is defined</li>
+                  <li>It is "falsy", so will return <span class="simple-code">false</span> if :
+                    <ul>
+                      <li>it doesn't exist / is not defined : <span class="simple-code">null</span></li>
+                      <li>it is empty : <span class="simple-code">""</span></li>
+                      <li>it is equal <span class="simple-code">0</span></li>
+                      <li>it is equal : <span class="simple-code">NaN</span> (Not a Number)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </p>
+
+              <u>Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-truthy-code" class="language-javascript">let numberOfApples = 0;
+if (numberOfApples){ 
+   console.log('Let us eat apples!');
+} else { 
+   console.log('No apples left!'); } // Outputs "No Apples Left !" 
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-truthy-code">COPY</button>
+              </div>
+
+              <p><b>Short-circuit Evaluation:</b> The pipe comparison tool <span class="simple-code">||</span> can replace an <span class="simple-code">if</span>. Indeed it will return option "A" or "B". So it will test first the first option. So if "A" exists, it takes "A", otherwise it takes "B". So it works exactly like an <span class="simple-code">if</span>.</p>
+
+              <div class="code-block">
+                <pre><code id="js-short-circuit-code" class="language-javascript">let defaultName;
+if (username) {
+   defaultName = username;
+} else {
+defaultName = 'Stranger';
+}
+
+// is the same as
+let defaultName = username || 'Stranger'
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-short-circuit-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="js-functions">
+              <h2 class="section-title">Functions</h2>
+
+
+              <div class="code-block">
+                <pre><code id="js-function-declaration-code" class="language-javascript">// To declare it
+funcion functionName() {
+  console.log('blablabla');
+}
+
+// To call it
+functionName();
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-function-declaration-code">COPY</button>
+              </div>
+
+              <p>Function have "hoisting" caracteristic, meaning you can call it (and use it) before declaring it. You can declare it after (even if it is not a good practice)</p>
+
+              <p>Since ES6 you can define a default value of a function parameter</p>
+
+              <div class="code-block">
+                <pre><code id="js-function-default-parameter-code" class="language-javascript">function greeting (name = 'stranger') { 
+  console.log(`Hello, ${name}!`);
+}
+// Will return "Stranger" if name is not defined
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-function-default-parameter-code">COPY</button>
+              </div>
+
+              <p><b>Return:</b> by default a fonction will always return <span class="simple-code">undefined</span>. Even when it work perfectly. In order for a function to return a result you need to use the keword <span class="simple-code">return</span>. With that I tell the function what value it has to return.</p>
+
+              <div class="code-block">
+                <pre><code id="js-function-return-code" class="language-javascript">Function calculateArea(width, height) {
+  const area = width*height ;
+  return area ;
+}
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-function-return-code">COPY</button>
+              </div>
+
+              <p>The <span class="simple-code">return</span> kw also allows you to stop the execution of a function. Indeed a function will stop when it meets <span class="simple-code">return</span></p>
+
+              <div class="code-block">
+                <pre><code id="js-function-return-2-code" class="language-javascript">if (xxx = false) {
+  return 'You need xxx to be true to continue' ;
+}
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-function-return-2-code">COPY</button>
+              </div>
+
+              <p><b>Function Expression:</b> Allows you to store an anonym function inside a variable and then call this function by calling the variable. You can also add arguments directly inside the variable (we usually use the <span class="simple-code">const</span> kw for that):</p>
+
+              <div class="code-block">
+                <pre><code id="js-function-expression-code" class="language-javascript">Const variableA = function(arg1, arg2) {
+  Blablabla;
+};
+variableA(arg1, arg2)
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-function-expression-code">COPY</button>
+              </div>
+
+              <p><b>Warning:</b> a function expression is not "hoisted". You can't call it before declaring it</p>
+            </section>
+
+
+            <section id="js-arrow-functions">
+              <h2 class="section-title">Arrow Functions</h2>
+
+              <p>Since ES6, arrow functions synthax allows to define a function without using the "function" kw:</p>
+
+              <div class="code-block">
+                <pre><code id="js-arrow-function-code" class="language-javascript">const rectangleArea = (width, height) => {
+  return width*height ;
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-arrow-function-code">COPY</button>
+              </div>
+
+              <p>Other ways to simplify your code:</p>
+              <ul>
+                <li>Functions with only 1 argument doesn't need parenthesis: <span class="simple-code">const varA = arg1 => { ... };</span> (if there are 0 or more than 1 argument you do need parenthesis).</li>
+                <li>Functions that fit in only "one line of code" doesn't need braces nor return (its called "implicit return"): <span class="simple-code">const sum = number => number + number;</span></li>
+              </ul>
+            </section>
+
+            <section id="js-scope">
+              <h2 class="section-title">Scope</h2>
+
+              <p>It defines a "perimeter" on which you can use a variable. If  variable is not define inside a function (outside the <span class="simple-code">{ }</span> ), it belongs to the "<b>global scope</b>". It is then a "<b>global variable</b>", you can access it everywhere.</p>
+              <p>On the contrary if a variable is defined inside a function (inside the block), it belongs to the scope of this function, and you can use it only inside this function. It has a "<b>block scope</b>". It is then a "<b>local variable</b>".</p>
+              <p>If you have to many global variable, it creates "scope polution". All those variable can have indesirable effect everywhere in your code. It is better to have few global variables and to localize it.</p>
+              <p>You can have two identical variable with different values depending on which scope you are looking</p>
+            </section>
+
+            <section id="js-arrays">
+              <h2 class="section-title">Arrays</h2>
+              <p>An array is a table, a variable on which you can store several elements: <span class="simple-code">const hobbies = ['surf', 'teuf', 'sex']</span> >> here it is 3 strings but it can be all sorts of elements.</span></p>
+              <p><b>Index:</b> you can then use each elements of an arrays calling its index. The first one have the index "0": <span class="simple-code">hobbies[1]</span> >> will return "teuf"</span></p>
+              <p><b>Length:</b> return the number of elements in the array. <span class="simple-code">hobbies.length</span> >> will return "3"</p>
+              <p>(Btw you can use the same logic to return string letters: <span class="simple-code">const name = "Renaud"</span> / <span class="simple-code">console.log(name[3]);</span> >> will return "a")</p>
+
+              <p><b>Common array functions</b>:
+                <ul>
+                  <li><span class="simple-code">.push(xxx)</span> > add a value at the end of the array</li>
+                  <li><span class="simple-code">.pop()</span> > remove the last element of the array (doesn't take any argument, will only remove the last element)</li>
+                  <li><span class="simple-code">.shift()</span> > remove the first element of the array (doesn't take any argument, will only remove the first element)</li>
+                  <li><span class="simple-code">.unshift(xxx)</span> > add a value at the beginning of an array</li>
+                  <li><span class="simple-code">.indexOf(xxx)</span> > return the value of the index of the element xxx</li>
+                  <li><span class="simple-code">.splice(pos, x)</span> > remove the element at the x position</li>
+                  <li><span class="simple-code">.splice(x, y, 'item1', 'item2')</span> > add elements 'item1' and 'item2' at the x position of the array, and remove y elements from this same position. (So if y = 0, it will just add 2 elements to the array. And if y = 1, it will replace 1 element etc...)</li>
+                  <li><span class="simple-code">.slice(x, x)</span> > return only a part of the array. Starts with the elment with index x (included) and stops at the element with index y (not included). It doesn't modify the original array, it just return a shorter copy. (Ex: <span class="simple-code">array1 = ['pomme', 'bannane', 'fraise', 'chocolat']</span> >>> <span class="simple-code">arra1.slice(1, 3)</span> >>> will return <span class="simple-code">['banane', 'fraise']</span>)</li>
+                  <li><span class="simple-code">.join()</span> > return a string with the concatenate elements of the array separated by comas</li>
+                  <li><span class="simple-code">.join('')</span> > same but without comas</li>
+                  <li><span class="simple-code">.join(' ')</span> > same but with space between words</li>
+                  <li><span class="simple-code">.join('-')</span> > same but with - between words etc...</li>
+                  <li><span class="simple-code">array1.concat(array2)</span> > return a new array with concatenate values of both arrays (don't modify original arrays, create a new one)</li>
+                  <li><span class="simple-code">.trim(xxx)</span> > remove space before and after a string</li>
+                </ul>
+              </p>
+            </section>
+
+            <section id="js-for-loop">
+              <h2 class="section-title">For Loop</h2>
+              <p><b>Structure:</b><br>
+              <span class="simple-code">for (initialisation; stop condition; to execute at the end of each iteration) {<br>
+                  code to execute;<br>
+                }</span>
+              </p>
+              <p>The <b>"stop condition"</b> is a boulean. The loop continues as long as this bolean is true. And it stops when the boulean is false.</p>
+              <u>Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-for-loop-code" class="language-javascript">var grades = [10, 5, 13, 20, 18];
+var sum = 0
+for (var i = 0; i < grades.length; i++) {
+sum = sum + grades[i];
+}
+// Output 66 >> (10 + 5 + 13 + 20 + 18)
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-for-loop-code">COPY</button>
+              </div>
+
+              <p>(A "nested loop", is a loop within a loop).</p>
+            </section>
+
+            <section id="js-while-loop">
+              <h2 class="section-title">While Loop</h2>
+              <p><b>Structure:</b><br>
+              <span class="simple-code">while (stop condition) {<br>
+                  code to execute;<br>
+                }</span>
+              </p>
+              <p>You just specify the stop condition. You have to define the initialisation before and the iteration within the code to execute</p>
+              <u>Same Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-while-loop-code" class="language-javascript">var grades = [10, 5, 13, 20, 18];
+sum = 0
+i = 0
+
+while (i < grades.length) {
+sum = sum + grades[i];
+i++;
+}
+// Output 66 >> (10 + 5 + 13 + 20 + 18)
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-while-loop-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="js-do-while-loop">
+              <h2 class="section-title">Do...While Loop</h2>
+              <p><b>Structure:</b><br>
+              <span class="simple-code">do {<br>
+                  code to execute;<br>
+                } while (stop condition);</span>
+              </p>
+              <p>It is similar to the while loop but you specify the code to execute before. So it will execute <b>at least one time</b> (and until the stop condition is false). Whereas a normal while loop can sometimes never run if the stop condition is always false.</p>
+              <u>Same Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-do-while-loop-code" class="language-javascript">var grades = [10, 5, 13, 20, 18];
+sum = 0
+i = 0
+
+do {
+ sum = sum + grades[i];
+  i++; 
+} while (i < grades.length);
+// Output 66 >> (10 + 5 + 13 + 20 + 18)
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-do-while-loop-code">COPY</button>
+              </div>
+
+              <p><b>Break:</b> the <span class="simple-code">break</span> kw allows you to force a loop to stop (even if the stop condition is still true). Inside the block code of your loop you have to add an if condition like that : <span class="simple-code">if (condition) { break; }</span></p>
+            </section>
+
+            <section id="js-high-order-functions">
+            	<h2 class="section-title">High-Order Functions</h2>
+              <p>You can assign a fonction to a variable:</p>
+
+              <div class="code-block">
+                <pre><code id="js-high-order-functions-code" class="language-javascript">const functionA = () => {
+code;
+};
+const variableA = functionA; // >> You do it without parenthesis
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-high-order-functions-code">COPY</button>
+              </div>
+
+              <p>And so you cans then call the function by calling the variable like that: <span class="simple-code">variableA();</span> <<< You can even pass arguments to it.</p>
+              <p>In JS, functions, like variables, are "first class objects", so like other objects you can assign proprieties to it like : 
+                <ul>
+                  <li><span class="simple-code">.length();</span></li>
+                  <li><span class="simple-code">.name();</span></li>
+                  <li><span class="simple-code">.tostring();</span></li>
+                  <li>etc...</li>
+                </ul></p>
+                <p>You can also pass a function as an argument to another function. You call those functions <b>"call back"</b> because they are called during the execution of the high-order function.</p>
+                <p>When you pass a function as an argument you don't want to call this function. By calling it you would have the result of the function as an argument (and not the function itself). That is why when you put a function as argument you put it without the parenthesis.</p>
+            </section>
+
+            <section id="js-iterators">
+              <h2 class="section-title">Iterators</h2>
+              <p>Those are built-in array methods that allows you to iterate (loop) easily on arrays</p>
+
+              <p><b>.forEach();</b></p>
+              <p>Apply the same function to all the elements of an array.</p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-foreach-code" class="language-javascript">const courses = ['pommes', 'poires', 'oranges', 'kiwi']
+
+courses.forEach(function(courseItem) {
+console.log('- ' + courseItem).
+});
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-foreach-code">COPY</button>
+              </div>
+              <p>>>> Will apply the <span class="simple-code">console.log();</span> to each elements of <span class="simple-code">courses</span>. (So we can say that <span class="simple-code">forEach();</span> takes a call-back function as an argument.)</p>
+
+              <p>You can also write it with an arrow function: <span class="simple-code">courses.forEach( courseItem => console.log('- ' + courseItem)) ;</span></p>
+
+              <p>This function doesn't create a new array. It just apply the function to each elements of the array but doesn't create a new element. It doesn't return anything, it always return <span class="simple-code">undefined</span>.</p>
+
+              <p><b>.map();</b></p>
+              <p>Also apply a function to all elements of an array, but this time it will return a nez array (with the new values)</p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-map-code" class="language-javascript">const numbers = [1, 2, 3, 4, 5] ;
+const bigNumbers = numbers.map(number => {
+return number * 10 ;
+});
+// bigNumbers = [10, 20, 30, 40, 50]
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-map-code">COPY</button>
+              </div>
+
+              <p><b>.filter();</b></p>
+              <p>Apply a function to all elements of an array, and return a new array with only the elements for witch this function returned <span class="simple-code">true</span></p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-filter-code" class="language-javascript">const mots = ['chien', 'chat', 'poussin', 'trotinette', 'hiiiibou'] ;
+const petitsMots = mots.filter(mot => { 
+return mot.length < 6 ;
+}); // petitsMots returns ['chien', 'chat']
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-filter-code">COPY</button>
+              </div>
+              <p>>>> <span class="simple-code">petitsMots</span> will return an array filtering only the <span class="simple-code">mots</span> values with less than 6 characters.</p>
+
+              <p><b>.findIndex();</b></p>
+              <p>Apply a function to all elements of an array, and return the index of the first element that return <span class="simple-code">true</span>. (It stops at the first it finds).</p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-findindex-code" class="language-javascript">const numbers = [40, 500, 230, 4, 9, 1] ;
+const smallNumbers = numbers.findIndex(number => { 
+return number < 10 ;
+});
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-findindex-code">COPY</button>
+              </div>
+              <p>>>> <span class="simple-code">smallNumbers</span> will return <span class="simple-code">3</span> because this is the index of "4", the first number inferior to 10 it finds.</p>
+              <p>If <span class="simple-code">.findIndex();</span> doesn't find any element that fulfill the condition, it will return <span class="simple-code">-1</span></p>
+
+              <p><b>.reduce();</b></p>
+              <p>Apply a function to all elements of an array, and return only one value. It takes 2 parameter. Initially the first parameter is the index 0 of the array, and the second one is the index 1 of the array. It will then apply the function using this two parameters.</p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-reduce-code" class="language-javascript">const numbers = [1, 2, 4, 10];
+const summedNums = numbers.reduce((accumulator, currentValue) => { 
+return accumulator + currentValue
+});
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-reduce-code">COPY</button>
+              </div>
+              <p>>>> So initially:
+                <ul>
+                  <li>accumulator = <span class="simple-code">1</span></li>
+                  <li>currentValue = <span class="simple-code">2</span></li>
+                </ul>
+              </p>
+              <p>So the first operation will be <span class="simple-code">1 + 2</span><br>
+              Then the function do it again. So the new accumulator is <span class="simple-code">3</span> (1 + 2), and the new currentValue is <span class="simple-code">4</span><br>
+              So the second operation will be <span class="simple-code">3 + 4</span><br>
+              Etc...<br>
+              So at the end, <span class="simple-code">summedNums</span> will return <span class="simple-code">17</span>.</p>
+              <p>You can also add a second argument to the function, which will define an initial vallue to the accumulator. (Other than the index 0 of the array). So it will add a new step to the operation.</p>
+              <u>Ex:</u>
+              <div class="code-block">
+                <pre><code id="js-reduce-2-code" class="language-javascript">const numbers = [1, 2, 4, 10];
+const summedNums = numbers.reduce((accumulator, currentValue) => { 
+return accumulator + currentValue
+ }, 100)
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-reduce-2-code">COPY</button>
+              </div>
+              <p>Instead of starting with accumulator = 1, you start with accumulator = 100 (and currentValue is still 1). After that it is the same:
+                <ul>
+                  <li>100 + 1 = 101</li>
+                  <li>101 + 2 = 103</li>
+                  <li>103 + 4 = 107</li>
+                  <li>107 + 10 = 117  >>> Final value of <span class="simple-code">summedNums</span></li>
+                </ul>
+              </p>
+
+              <p><b>.some();</b></p>
+              <p>Will look if at least one element of the array fulfill the condition, and will return <span class="simple-code">true</span> or <span class="simple-code">false</span></p>
+
+              <p><b>.every();</b></p>
+              <p>Will look if all the elements of the array fulfill the condition, and will return <span class="simple-code">true</span> or <span class="simple-code">false</span></p>
+           	</section>
+
+           	<section id="js-objects">
+              <h2 class="section-title">Objects</h2>
+
+              <p>Objects can be stored inside a variable, like any other JS element: <span class="simple-code">let spaceship = {};</span></p>
+              <p>Inside objects you store data thanks to properties. Can be of any type (string, number, function etc...):</p>
+
+              <div class="code-block">
+                <pre><code id="js-objects-code" class="language-javascript">let spaceship = {
+'Fuel Type' : 'diesel', // need ' ' here because there is a space on the property name
+color : 'silver'
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-objects-code">COPY</button>
+              </div>
+
+              <p>You then can access proprieties with the .dot operator: <span class="simple-code">spaceship.color</span></p>
+              <p>Or with brackets: <span class="simple-code">spaceship['Fuel Type'];</span> (You have to use brackets actually if the property name has a space, a number or a special character).</p>
+              <p>If you call a property that doesn't existe, it returns <span class="simple-code">undefined</span></p>
+              <p>You can also add, modify or delete properties:
+								<ul>
+									<li><span class="simple-code">spaceship.type = 'alien'</span> > If the property "type" exists, it will be modified. Otherwise it will be created</li>
+									<li><span class="simple-code">delete spaceship.mission</span> > Will delete "mission" property</li>
+								</ul>
+              </p>
+              <p>When you store a function inside an object, you call it a method:
+								<ul>
+									<li>A property is what an object <b>has</b></li>
+									<li>A method is what an object <b>does</b></li>
+								</ul>
+              </p>
+              <p>When you add a function to an object, the value of the property is an anonymus function:</p>
+
+              <div class="code-block">
+                <pre><code id="js-objects-function-code" class="language-javascript">const alienShip = { 
+	invade: function () { 
+	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'); 
+	} 
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-objects-function-code">COPY</button>
+              </div>
+
+							<p>Or shorter like that:</p>
+
+              <div class="code-block">
+                <pre><code id="js-objects-function2-code" class="language-javascript">const alienShip = { 
+	invade () { 
+	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'); 
+	} 
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-objects-function2-code">COPY</button>
+              </div>
+
+              <p>Ti call a method inside an object you also use the .dot operator, with the function name and parenthesis: <span class="simple-code">alienShip.invade();</span></p>
+              <p>You can nest objects within objects (pass an object as a parameter of an higher object). And you can then call nested objects with a serie of .dot operators: <span class="simple-code">spaceship.nanoelectronics['back-up'].battery;</span></p>
+
+            	<p><b>Pass by Reference:</b> It is the fact of modifiying an object property directly via a function.</p>
+            	<p>First you define your object:</p>
+            	<div class="code-block">
+                <pre><code id="js-pass-by-reference-code" class="language-javascript">let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-pass-by-reference-code">COPY</button>
+              </div>
+
+              <p>Then you create functions that will modify/add a property to this object</p>
+              <div class="code-block">
+                <pre><code id="js-pass-by-reference2-code" class="language-javascript">let greenEnergy = obj => {
+  obj['Fuel Type'] = 'Avocado Oil';
+};
+
+let remotelyDisable = obj => {
+  obj.disabled = true;
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-pass-by-reference2-code">COPY</button>
+              </div>
+
+              <p>Then if you call those functions on your objects:
+								<ul>
+									<li><span class="simple-code">greenEnergy(spaceship);</span></li>
+									<li><span class="simple-code">remotelyDisable(spaceship);</span></li>
+								</ul>
+              </p>
+
+              <p>It will modify your object like that:</p>
+              <div class="code-block">
+                <pre><code id="js-pass-by-reference3-code" class="language-javascript">let spaceship = {
+  'Fuel Type': 'Avocado Oil',
+  homePlanet: 'Earth',
+  disabled: true
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-pass-by-reference3-code">COPY</button>
+              </div>
+            </section>
+
+            <section id="js-object-loops">
+              <h2 class="section-title">Object Loops</h2>
+              <p>You can't use a normal for loop on objects (because object key-value pairs are not in order). So you have to use <span class="simple-code">for...in</span> loop:</p>
+
+              <div class="code-block">
+                <pre><code id="js-for-in-code" class="language-javascript">for (let x in objet.property) {
+     console.log(x);
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-for-in-code">COPY</button>
+              </div>
+              <p>>>> Will loop each <span class="simple-code">object.property</span> and console.log it</p>
+
+              <u>Ex:</u>
+
+              <div class="code-block">
+                <pre><code id="js-for-in2-code" class="language-javascript">let spaceship = {
+	crew: {
+	  	captain: { 
+	    	name: 'Lily'
+	    	},
+	    'chief officer': { 
+	    	name: 'Dan'
+	    	},
+	    medic: { 
+	    	name: 'Clementine'
+	      },
+	    translator: {
+	    	name: 'Shauna'
+	      }
+	}	
+}; 
+
+for (let crewMember in spaceship.crew) {
+  console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-for-in2-code">COPY</button>
+              </div>
+              <p>>>> Will outputs:
+								<ul>
+									<li>"captain: Lily"</li>
+									<li>"chief officer: Dan"</li>
+									<li>"medic: Clementine"</li>
+									<li>"translator: Shauna"</li>
+								</ul>
+              </p>
+
+              <p><b>"This" KW</b></p>
+              <p>When you define a methode inside an object an that this function call property of this same object, you have to use the <span class="simple-code">this</span> kw, otherwise the scope of the function doesn't allows you to access the property:</p>
+              <div class="code-block">
+                <pre><code id="js-this-code" class="language-javascript">const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`
+  }
+};
+
+console.log(robot.provideInfo());
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-this-code">COPY</button>
+              </div>
+              <p>>>> Without the <span class="simple-code">this</span> kw, the <span class="simple-code">provideInfo()</span> function doesn't work because it can't access <span class="simple-code">model</span> and <span class="simple-code">energyLevel</span></p>
+
+              <p><b>WARNING:</b> the <span class="simple-code">this</span> kw doesn't work (or at least not the same way), with arrow functions. Because arrow function already have an inherent <span class="simple-code">this</span> which is the one of the global scope. So you can't use <span class="simple-code">this</span> with arrow functions.</p>
+
+              <p><b>Privacy</b></p>
+              <p>In JS there is no built-in privacy for objects. So there is a naming convention to signal that a property is not supposed to be altered:</p>
+
+              <div class="code-block">
+                <pre><code id="js-privacy-code" class="language-javascript">const bankAccount = {
+ _amount: 1000
+};
+</code></pre>
+                <button class="btn btn-light copy-btn" data-clipboard-target="#js-privacy-code">COPY</button>
+              </div>
+
+              <section id="js-getters-setters-methods">
+	              <h2 class="section-title">Getters & Setters Methods</h2>
+	              <p>You use the "get" functions inside an object to perform more complex operations inside your object. (It is like a normal method property with a <span class="simple-code">get</span> before function name). It allows you to :
+									<ul>
+										<li>Access and perform actions on the data of the object</li>
+										<li>Using conditional <span class="simple-code">if...else</span> inside your object</li>
+										<li>Access properties of the object, using <span class="simple-code">this</span> kw</li>
+									</ul>
+	              </p>
+	              <p><b>Tips:</b>
+									<ul>
+										<li>get (and set) methods can't have the same name than a property. So a good practice is to put a "_" before the property names</li>
+										<li>When calling a get method, no need to put parenthesis (it is like accessing a property)</li>
+									</ul>
+	              </p>
+	              <u>Ex:</u>
+
+	              <div class="code-block">
+	                <pre><code id="js-getter-code" class="language-javascript">const person = {
+	_firstName: 'John',
+	_lastName: 'Doe',
+	get fullName() {
+		if (this._firstName && this._lastName) {
+			return `${this._firstName} ${this._lastName}`;
+		} else {
+			return 'Missing a first name or a last name.';
+		}
+	}
+};
+
+// to call the getter method:
+person.fullName; // Outputs 'John Doe'
+</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-getter-code">COPY</button>
+	              </div>
+
+	              <p><b>Setters Methods</b> work exactly like getter methods but allows you to reassign values of existing properties within an object:
+									<ul>
+										<li>getters allows you to "get" (access) values within an object</li>
+										<li>setters allows you to "set" (change, modify, reassign) values within an object</li>
+									</ul>
+	              </p>
+
+	              <u>Ex:</u>
+
+	              <div class="code-block">
+	                <pre><code id="js-setter-code" class="language-javascript">const person = {
+	_age: 37,
+	set age(newAge) {
+		if (typeof newAge === 'number') {
+			this._age = newAge;
+		} else {
+			console.log('You must assign a number to age');
+		}
+	}
+};
+
+// to use the setter method:
+person.age = 40; // Now console.log(person._age); will return 40
+</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-setter-code">COPY</button>
+	              </div>
+	            </section>
+
+              <section id="js-factory-functions">
+              	<h2 class="section-title">Factory Functions</h2>
+              	<p>Factory functions represent the "structure" of an object. You use it when you want to create a lot of similar objects. You create a factory function that have the « property » structure of the object you want to create. For that you need to create a function that « return » an object. And basically you pass your object properties as your function arguments. And then by calling this function and passing it arguments, you create a new object.</p>
+								<u>Ex:</u> this is a factory function to create a monster
+
+								<div class="code-block">
+	                <pre><code id="js-factory-functions-code" class="language-javascript">const monsterFactory = (name, age, energySource, catchPhrase) => {
+  return { 
+    name: name,
+    age: age, 
+    energySource: energySource,
+    scare() {
+      console.log(catchPhrase);
+    } 
+  }
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-code">COPY</button>
+	              </div>
+
+	              <p>Then you can create a new monster only by calling the function:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-factory-functions-create-code" class="language-javascript">const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-create-code">COPY</button>
+	              </div>
+
+	              <p>And then you can call properties of your new monster:</p>
+	              <div class="code-block">
+	                <pre><code id="js-factory-functions-call-code" class="language-javascript">ghost.scare(); // Returns 'BOO!'</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-call-code">COPY</button>
+	              </div>
+
+	              <p>Since ES6 you have a shortcut. Because the key and the value of the proprieties where always the same, you can simplify and write only the key, like that:</p>
+	              <div class="code-block">
+	                <pre><code id="js-factory-functions-shortcute-code" class="language-javascript">const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age 
+  }
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-shortcute-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-destructured-assignment">
+              	<h2 class="section-title">Destructured Assignment</h2>
+              	<p>This is a shortcut that allows you to extract the property of an object to put it in a variable. Normally you would do like that</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-destructured-assignment-code" class="language-javascript">const vampire = {
+   name: 'Dracula',
+   residence: 'Transilvania',
+   preference: {
+		day: 'stay inside',
+		night: 'satisfy appetite'
+	} 
+};
+
+const residence = vampire.residence;
+console.log(residence); // will print 'Transilvania'</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-destructured-assignment-code">COPY</button>
+	              </div>
+
+	              <p>But to save you some keystrokes you can put the name of the property inside {} directly as the name of the variable like that</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-destructured-assignment2-code" class="language-javascript">const {residence} = vampire;
+console.log(residence); // will print 'Transilvania'</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-destructured-assignment2-code">COPY</button>
+	              </div>
+              </section>
+
+              <section id="js-built-in-object-methods">
+              	<h2 class="section-title">Built-in Object Methods</h2>
+              	<p>You can use useful built-in methods to manipulate object like:
+									<ul>
+										<li><span class="simple-code">Object.keys(my_object)</span> >> will return an array with all the keys of my_object</li>
+										<li><span class="simple-code">Object.entries(my_object)</span> >> will return an array with all the entries (key + value) my_object</li>
+										<li><span class="simple-code">Object.assign(new_properties, my_object)</span> >> will return a new object that have the same properties of my_object + the new properties. (Or will modify those properties if they were already in my_object</li>
+										<li>>> More examples in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods" target="_blank">Moz Documentation</a></li>
+									</ul>
+              	</p>
+
+              	<u>Ex:</u>
+								<div class="code-block">
+	                <pre><code id="js-built-in-object-methods-code" class="language-javascript">const robot = {
+	model: 'SAL-1000',
+	mobile: true,
+	sentient: false,
+	armour: 'Steel-plated',
+	energyLevel: 75
+};
+
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Will return:
+
+[ 'model', 'mobile', 'sentient', 'armour', 'energyLevel' ]</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-built-in-object-methods-code">COPY</button>
+	              </div>
+
+	              <u>Or:</u>
+								<div class="code-block">
+	                <pre><code id="js-built-in-object-methods2-code" class="language-javascript">const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+
+console.log(newRobot);
+
+// Will return:
+
+{ laserBlaster: true,
+	voiceRecognition: true,
+	model: 'SAL-1000',
+	mobile: true,
+	sentient: false,
+	armour: 'Steel-plated',
+	energyLevel: 75 }</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-built-in-object-methods2-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-classes">
+              	<h2 class="section-title">Classes</h2>
+              	<p>Classes are tool to quickly produce similar objects. Classes are like "templates" used to create objects.</p>
+              	<p>For example if you have this object:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-classes-code" class="language-javascript">let halley = {
+	_name: 'Halley',
+	_behavior: 0,
+
+	get name() {
+		return this._name;
+	},
+
+	get behavior() {
+		return this._behavior;
+	},
+
+	incrementBehavior() {
+		this._behavior++;
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-classes-code">COPY</button>
+	              </div>
+
+	              <p>You can create this class to build the same type of objects:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-classes2-code" class="language-javascript">class Dog {
+	constructor(name) {
+		this._name = name;
+		this._behavior = 0;
+	}
+
+	get name() {
+		return this._name;
+	}
+
+	get behavior() {
+		return this._behavior;
+	}
+
+	incrementBehavior() {
+		this._behavior++;
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-classes2-code">COPY</button>
+	              </div>
+
+	              <p>And then you can create new objects thanks to the class. It is called "create an instance". Like that:</p>
+
+								<div class="code-block">
+	                <pre><code id="js-class-instance-code" class="language-javascript">const halley = new Dog('Halley');
+
+// It will create this object:
+
+Dog { 
+_name: 'Halley',
+_behavior: 0
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-class-instance-code">COPY</button>
+	              </div>
+
+	              <p>Details of how to build a class:
+									<ul>
+										<li>By convention class names are capitalize and CamelCase</li>
+										<li>You need a <b>constructor method</b>. You will invoke it every time you create a new instance of the class</li>
+										<li>Inside the constructor() method you use the <span class="simple-code">this</span> kw (to refers to an instance of this class)</li>
+										<li>You can't include comas between your different methods (only synthax difference with an object)</li>
+										<li>You need to use the <span class="simple-code">new</span> kw to create an instance of a class</li>
+									</ul>
+	              </p>
+	            </section>
+
+	            <section id="js-inheritance">
+              	<h2 class="section-title">Inheritance</h2>
+              	<p>When you have several similar classes you can create a "parent" class that will share the same properties and methods that its children classes. The children classes will have the same properties and methods but you can also add new ones.</p>
+              	<p>So if we take our last example (dog creation). We can actually create a parent <span class="simple-code">Animal</span> class, like that:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-classes-inheritance-code" class="language-javascript">class Animal {
+	constructor(name) {
+		this._name = name;
+		this._behavior = 0;
+	}
+
+	get name() {
+		return this._name;
+	}
+
+	get behavior() {
+		return this._behavior;
+	}
+
+	incrementBehavior() {
+		this._behavior++;
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-classes-inheritance-code">COPY</button>
+	              </div>
+
+	              <p>And after that create a child <span class="simple-code">cat</span> class, that will have the same <span class="simple-code">name</span> and <span class="simple-code">behavior</span> properties, but also a new one called <span class="simple-code">usesLitter</span>:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-class-inheritance2-code" class="language-javascript">class Cat extends Animal {
+	constructor(name, usesLitter) {
+		super(name);
+		this._usesLitter = usesLitter;
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-class-inheritance2-code">COPY</button>
+	              </div>
+
+	              <p> So to create a child class you need:
+	              	<ul>
+	              		<li>The <span class="simple-code">extend</span> kw. That makes the parent class available inside the child class</li>
+	              		<li>The <span class="simple-code">super</span> kw. That calls the constructor of the parent class. You need it for the property that have an argument (To be able to pass this argument to the child class). Otherwise you don't need to even define the property, each child class automatically have the properties (and methods) of its parents. You <b>always</b> have to call the <span class="simple-code">super</span> properties before the ones specific to the child class. (Always use the <span class="simple-code">super</span> kw before the <span class="simple-code">this</span> kw)</li>
+	              	</ul>
+	              </p>
+
+	              <p><b>Tips:</b> if you have several properties with arguments that need to be called in the parent class by the <span class="simple-code">super</span> KW, you all put it in the SAME super kw (not several ones). Like that:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-class-inheritance3-code" class="language-javascript">class Primary extends School {
+	constructor(name, numberOfStudents, pickupPolicy) {
+		super(name, 'primary', numberOfStudents);
+		this._pickupPolicy = pickupPolicy;
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-class-inheritance3-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-static-methods">
+              	<h2 class="section-title">Static Methods</h2>
+
+              	<p>Sometimes you will want a class to have methods that aren't available in individual instances, but that you can call directly from the class.</p>
+              	<p>To create a static method you need to use the <span class="simple-code">static</span> kw like that:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-class-static-methods-code" class="language-javascript">class Animal {
+	constructor(name) {
+		this._name = name;
+		this._behavior = 0;
+	}
+
+	static generateName() {
+		const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
+		const randomNumber = Math.floor(Math.random()*5);
+		return names[randomNumber];
+	}
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-class-static-methods-code">COPY</button>
+	              </div>
+
+	              <p>>>> We create a static method that return a random name when called. Because of the static kw we can only access this method by appending it to the Animal class.</p>
+	              <p>So you can call the <span class="simple-code">generateName</span> method like that : <span class="simple-code">Animal.generateName();</span></p>
+	              <p>But if you create instances of Animal (or child classes), for example : <span class="simple-code">const tyson = new Animal('Tyson');</span></p>
+	             	<p>Then you can't do that : <span class="simple-code">tyson.generateName();</span> >>> It will return <i><b>TypeError</b></i></p>
+	            </section>
+
+	            <section id="js-babel">
+              	<h2 class="section-title">Babel (Node JS Package)</h2>
+
+              	<p>Babel is a Node JS package that you can download and add to your folder structure. Then you call it with your terminal and it will automatically translate your ES6+ JS code to ES5 JS code:
+									<ul>
+										<li><span class="simple-code">npm init</span> - A terminal command that creates a package.json file</li>
+										<li><span class="simple-code">package.json</span> - A file that contains information about a JavaScript project</li>
+										<li><span class="simple-code">npm install</span> - A command that installs Node packages</li>
+										<li><span class="simple-code">babel-cli</span> - A Node package that contains command line tools for Babel. (so to install it you have to type <span class="simple-code">$ npm install babel-cli</span> in your terminal.  You can also add <span class="simple-code">–D</span> at the end of the commend to instructs npm to add the package to a property called devDependencies in package.json)</li>
+										<li><span class="simple-code">babel-preset-env</span> - A Node package that contains ES6+ to ES5 syntax mapping information. (so to install it you have to type <span class="simple-code">$ npm install babel-preset-env</span> in your terminal.  You can also add <span class="simple-code">-D</span> at the end of the commend to instructs npm to add the package to a property called devDependencies in package.json)</li>
+										<li><span class="simple-code">.babelrc</span> - A file that specifies the version of the JavaScript source code. (So to install you have to type <span class="simple-code">touch .babelrc</span> into the terminal)</li>
+										<li>Within babelrc you have to add <span class="simple-code">{"presets": ["env"]}</span> to instructs Babel to transpile any code from versions ES6 and later</li>
+										<li><span class="simple-code">"build" script</span> - A package.json script that you use to tranpsile ES6+ code to ES5</li>
+										<li>For <span class="simple-code">"build" script</span> to work, you have to add it within the package.json file. Within the <span class="simple-code">script</span> method, add a property called <span class="simple-code">build</span> with the following value : <span class="simple-code">babel src -d lib</span> :
+											<ul>
+												<li><span class="simple-code">babel</span> - The Babel command call responsible for transpiling code</li>
+												<li><span class="simple-code">src</span> - Instructs Babel to transpile all JavaScript code inside the src directory</li>
+												<li><span class="simple-code">-d</span> - Instructs Babel to write the transpiled code to a directory</li>
+												<li><span class="simple-code">lib</span> - Babel writes the transpiled code to a directory called lib.</li>
+											</ul>
+										</li>
+										<li><span class="simple-code">npm run build</span> - A command that runs the build script and transpiles ES6+ code to ES5</li>
+									</ul>
+								</p>
+
+								<p>More info: <a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/browser-compatibility-and-transpilation/exercises/transpilation-with-babel" target="_blank">https://www.codecademy.com/courses/introduction-to-javascript/lessons/browser-compatibility-and-transpilation/exercises/transpilation-with-babel</a></p>
+							</section>
+
+							<section id="js-modules">
+              	<h2 class="section-title">Modules</h2>
+
+              	<p>In JS, Modules are reusable pieces of code that can be exported from one program and imported for use in another program.</p>
+              	<p>You can create modules thanks to the <span class="simple-code">module.exports</span> statement:
+	              	<ol>
+	              		<li>you create an object</li>
+	              		<li>you define properties or methods within this object</li>
+	              		<li>you export this module (the object) with the <span class="simple-code">module.exports</span> statement</li>
+	              	</ol>
+	              </p>
+
+              	<div class="code-block">
+	                <pre><code id="js-modules-code" class="language-javascript">let Airplane = {};
+Airplane.myAirplane = "StarJet";
+
+module.exports = Airplane;</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-modules-code">COPY</button>
+	              </div>
+
+	              <p>Then we use the <span class="simple-code">require();</span> function to import module. It takes the module file path as an argument:
+									<ol>
+										<li>You create a <span class="simple-code">const</span> variable</li>
+										<li>You set it equal to <span class="simple-code">require('./module.js')</span> (.js is optional and will be assumed if not included)</li>
+									</ol>
+	              </p>
+
+	              <div class="code-block">
+	                <pre><code id="js-modules2-code" class="language-javascript">const Airplane = require('./1-airplane.js');
+
+function displayAirplane() {
+	console.log(Airplane.myAirplane);
+}
+
+displayAirplane();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-modules2-code">COPY</button>
+	              </div>
+
+
+	              <p>>>> This make that you imported your module and assigned it to a local variable. You then can use all the methods and properties of your module within your file.</p>
+
+	              <p>You can also wrap your data within the <span class="simple-code">module.exports</span> statement to directly export it:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-modules3-code" class="language-javascript">module.exports = {
+	myAirplane: 'CloudJest';
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-modules3-code">COPY</button>
+	              </div>
+
+              	<p><b>Export Default & Import:</b> <span class="simple-code">export default</span> and <span class="simple-code">import</span> are the ES6 equivalent of <span class="simple-code">module.exports</span> and <span class="simple-code">require()</span>:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-export-default-code" class="language-javascript">let Menu = {};
+
+export default Menu;
+
+// Then to import:
+
+import Menu from './menu';</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-export-default-code">COPY</button>
+	              </div>
+
+	              <p>
+	              	<ul>
+	              		<li>The <span class="simple-code">import</span> kw begins the statement</li>
+	              		<li>The kw <span class="simple-code">Menu</span> here specifie the name of the variable to store the default export in (it is like Airplane in <span class="simple-code">const Airplane = require</span>…etc…)</li>
+	              		<li><span class="simple-code">'./menu'</span> is the name of the module to load</li>
+	              	</ul>
+	              </p>
+
+	              <p><b>Named Exports and Imports:</b> In ES6 the <span class="simple-code">export</span> kw also allows you to export data through the use of variables. You can create variable, methods, objects or any data and export it with its specific name to be stored in its own variable:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-named-exports-code" class="language-javascript">let specialty = '';
+function isVegetarian() {
+};
+function isLowSodium() {
+};
+
+export { speciality, isVegetarian } from './menu';
+
+// Then you can import it like that:
+
+import { speciality, isVegetarian } from './menu';</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-named-exports-code">COPY</button>
+	              </div>
+
+	              <p>You can even write the <span class="simple-code">export</span> kw before your variable/function to export it directly:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-named-exports2-code" class="language-javascript">export let specialty = '';
+export function isVegetarian() {
+};
+function isLowSodium() {
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-named-exports2-code">COPY</button>
+	              </div>
+
+	              <p><b>Export as & Import as:</b> You can use the <span class="simple-code">export as</span> kw to change the name of the variable you want to export:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-named-exports-as-code" class="language-javascript">let specialty = '';
+function isVegetarian() {
+};
+function isLowSodium() {
+};
+
+export { speciality as chefsSpecial, isVegetarian as is Veg, isLowSodium };</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-named-exports-as-code">COPY</button>
+	              </div>
+
+	              <p>After that you have to import it normally with the alias name you created</p>
+	              <p>You can also <span class="simple-code">import as</span> to give an alias or change the alias of a variable when you import it</p>
+	              <p>You can also use it to import an entire module with a specific alias:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-named-exports-as2-code" class="language-javascript">import * as Cart from './menu';
+
+Carte.chefsSpecial;
+Carte.isVeg();
+Carte.isLowSodium();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-named-exports-as2-code">COPY</button>
+	              </div>
+
+	              <p>You can also combine and mix every export types together (default exports, named exports, direct on declaration export etc…):</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-combined-exports-code" class="language-javascript">let specialty = '';
+function isVegetarian() {
+};
+function isLowSodium() {
+};
+function isGlutenFree() {
+};
+
+export { speciality as chefsSpecial, isVegetarian as is Veg };
+export default isGlutenFree;</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-combined-exports-code">COPY</button>
+	              </div>
+
+	              <p>As you can also combine and mix every import types together (default import, named import etc…):</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-combined-imports-code" class="language-javascript">import { speciality, isVegetarian, isLowSodium } from './menu';
+
+import GlutenFree from './menu';</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-combined-imports-code">COPY</button>
+	              </div>
+							</section>
+
+							<section id="js-promises">
+              	<h2 class="section-title">Promises</h2>
+
+              	<p>Here an example of a promise construction:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-promises-code" class="language-javascript">const executorFunction = (resolve, reject) => {
+  if (someCondition) {
+      resolve('I resolved!');
+  } else {
+      reject('I rejected!'); 
+  }
+}
+const myFirstPromise = new Promise(executorFunction);</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-promises-code">COPY</button>
+	              </div>
+
+	              <p>
+	              	<ul>
+	              		<li>We declare a variable: <span class="simple-code">myFirstPromise</span>. It is constructed using <span class="simple-code">new Promise()</span></li>
+	              		<li><span class="simple-code">Promise()</span> is the Promise constructor method</li>
+	              		<li><span class="simple-code">executorFunction()</span> is passed to the constructor method and has two functions as parameters: <span class="simple-code">resolve</span> and <span class="simple-code">reject</span></li>
+	              		<li>If <span class="simple-code">someCondition</span> evaluates to true, we invoke <span class="simple-code">resolve()</span></li>
+	              		<li>If not we invoke <span class="simple-code">reject()</span></li>
+	              		<li>(Promises are objects)</li>
+	              	</ul>
+	              </p>
+
+	              <p>The executor function generally starts an asynchronous operation and dictates how the promise should be settled. So normally the <span class="simple-code">resolve()</span> and <span class="simple-code">reject()</span> functions aren't defined by the programmer, when the Promise constructor runs, JavaScript will pass its own <span class="simple-code">resolve()</span> and <span class="simple-code">reject()</span> functions into the executor function.</p>
+
+	              <b>Example of promise: as the result of an asynchronous operation using <span class="simple-code">setTimeout()</span></b>
+
+	              <p><span class="simple-code">setTimeout()</span> is a Node API that uses callback functions to schedule task to be performed after a delay. It has two parameters:
+	              	<ul>
+	              		<li>A callback function</li>
+	              		<li>A delay in milliseconds</li>
+	              	</ul>
+	              </p>
+
+	              <div class="code-block">
+	                <pre><code id="js-promises-settimeout-code" class="language-javascript">const delayedHello = () => {
+  console.log('Hi! This is an asynchronous greeting!');
+};
+
+setTimeout(delayedHello, 2000);
+
+// delayedHello() will be invoked but with a delay of 2 seconds.</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-promises-settimeout-code">COPY</button>
+	              </div>
+
+	              <p>Asynchronous JavaScript uses something called the <b>event-loop</b>. After two seconds, <span class="simple-code">delayedHello()</span> is added to a line of code <b>waiting to be run. Before it can run, any synchronous code from the program will run.</b> Next, any code in front of it in the line will run. This means it might be more than two seconds before <span class="simple-code">delayedHello()</span> is actually executed.</p>
+
+	              <p><u>Ex:</u> of how you will use <span class="simple-code">setTimeout()</span> to construct asynchronous promises:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-promises-settimeout2-code" class="language-javascript">const returnPromiseFunction = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(( ) => {resolve('I resolved!')}, 1000);
+  });
+};
+
+const prom = returnPromiseFunction();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-promises-settimeout2-code">COPY</button>
+	              </div>
+	              <p>>>> We invoked <span class="simple-code">returnPromiseFunction()</span> wich returned a promise. We assigned that promise to the variable <span class="simple-code">prom</span>. <span class="simple-code">prom</span> will initially have a status of "pending". Indeed, the initial state of an asynchronous promise is pending.</p>
+	            </section>
+
+	            <section id="js-then">
+              	<h2 class="section-title">Then() Method</h2>
+
+              	<p>Asynchronous promise always have an initial state of pending and then will settle. We use the <span class="simple-code">then()</span> method to say to the program what to do after that : "I have a promise, when it settles, then here's what I want to happen…". So <span class="simple-code">then()</span> will be fired only after the status of the promise has been resolved (fullfiled or rejected).</p>
+
+              	<p><span class="simple-code">.then()</span> is a higher-order function, it takes two callback functions as arguments. We refer to these callbacks as handlers:
+									<ul>
+										<li>The first handler, called <b>onFulfilled</b> is a success handler, it contain what to do when the promise resolved</li>
+										<li>The second handler, <b>onReject</b> is a failure handler, it contains what to do when the promise rejected</li>
+									</ul>
+								We can invoke <span class="simple-code">then()</span> with one, both or zero handlers.
+              	</p>
+
+              	<u>Ex:</u>
+
+              	<div class="code-block">
+	                <pre><code id="js-then-code" class="language-javascript">const prom = new Promise((resolve, reject) => {
+  resolve('Yay!');
+});
+
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+prom.then(handleSuccess); // Prints: 'Yay!'</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-then-code">COPY</button>
+	              </div>
+
+	              <p>>>> Since <span class="simple-code">prom</span> resolves, <span class="simple-code">handleSuccess()</span> is invoked with prom‘s resolved value, 'Yay', so 'Yay' is logged to the console.</p>
+
+	              <p>But with typical promise consumption, we won't know wheter a promise will resolve or reject, so we'll need to provide the logic for either case:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-then2-code" class="language-javascript">let prom = new Promise((resolve, reject) => {
+  let num = Math.random();
+  if (num < .5 ){
+    resolve('Yay!');
+  } else {
+    reject('Ohhh noooo!');
+  }
+});
+
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+const handleFailure = (rejectionReason) => {
+  console.log(rejectionReason);
+};
+
+prom.then(handleSuccess, handleFailure);</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-then2-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-catch">
+              	<h2 class="section-title">Using catch() with Promises</h2>
+
+              	<p>To write cleaner code we use the separation of concerns principle. So we separate our resolved logic from our rejected logic:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-catch-code" class="language-javascript">prom
+  .then((resolvedValue) => {
+    console.log(resolvedValue);
+  })
+  .then(null, (rejectionReason) => {
+    console.log(rejectionReason);
+  });</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-catch-code">COPY</button>
+	              </div>
+
+	              <p>And to be even cleaner we use the <span class="simple-code">.catch()</span> function. It takes only one argument: <span class="simple-code">onRejected</span>. It is like using a <span class="simple-code">.then()</span> with only the failure handler:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-catch2-code" class="language-javascript">prom
+  .then((resolvedValue) => {
+    console.log(resolvedValue);
+  })
+  .catch((rejectionReason) => {
+    console.log(rejectionReason);
+  });</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-catch2-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-chaining-multiple-promises">
+              	<h2 class="section-title">Chaining Multiple Promises</h2>
+
+              	<p>Chaining multiple promises is called composition:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-chaining-multiple-promises-code" class="language-javascript">firstPromiseFunction()
+.then((firstResolveVal) => {
+  return secondPromiseFunction(firstResolveVal);
+})
+.then((secondResolveVal) => {
+  console.log(secondResolveVal);
+});</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-chaining-multiple-promises-code">COPY</button>
+	              </div>
+
+	              <p>
+	              	<ul>
+	              		<li>We invoke <span class="simple-code">firstPromiseFunction()</span> witch returns a promise</li>
+	              		<li>We invoke <span class="simple-code">.then()</span> with an anonymous function as the success handler</li>
+	              		<li>Inside the success handler we return a new promise. The result of invoking a second function, <span class="simple-code">secondPromiseFunction()</span> with the first promise's resolved value as a parameter</li>
+	              		<li>We invoke a second <span class="simple-code">.then()</span> to handle the logic of the second promise settling</li>
+	              		<li>Inside that <span class="simple-code">.then()</span> we have a success handler which will log the second promise's resolved value to the console.</li>
+	              	</ul>
+	              </p>
+
+	              <p><b>2 common mistakes:</b>
+									<ul>
+										<li>Nesting promises instead of chaining them: <a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/promises/exercises/avoiding-common-mistakes?action=resume_content_item" target="_blank">see here</a></li>
+										<li>Forgetting to return a promise : <a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/promises/exercises/avoiding-common-mistakes?action=resume_content_item" target="_blank">see here</a></li>
+									</ul>
+	              </p>
+	            </section>
+
+	            <section id="js-promises-all">
+              	<h2 class="section-title">Promise.all()</h2>
+
+              	<p>It's a way to handle multiple promise without caring about the order. <span class="simple-code">Promise.all()</span> accepts an array of promises as its argument and returns a single promise. That single promise will settle in one of two ways:
+									<ul>
+										<li>If every promise in the argument resolves > <span class="simple-code">Promise.all()</span> will resolve with an array containing the resolve value from each promise in the argument array</li>
+										<li>If any promise from the argument array rejects > <span class="simple-code">Promise.all()</span> will immediately reject with the reason that promise rejected</li>
+									</ul>
+              	</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-promise-all-code" class="language-javascript">let myPromises = Promise.all([returnsPromOne(), returnsPromTwo(), returnsPromThree()]);
+
+myPromises
+  .then((arrayOfValues) => {
+    console.log(arrayOfValues);
+  })
+  .catch((rejectionReason) => {
+    console.log(rejectionReason);
+  });</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-promise-all-code">COPY</button>
+	              </div>
+
+	              <p><b>To sum up about promises:</b>
+									<ul>
+										<li>Promises are JavaScript objects that represent the eventual result of an asynchronous operation</li>
+										<li>Promises can be in one of three states: pending, resolved, or rejected</li>
+										<li>A promise is settled if it is either resolved or rejected</li>
+										<li>We construct a promise by using the <span class="simple-code">new</span> keyword and passing an executor function to the promise constructor method</li>
+										<li>We use <span class="simple-code">.then()</span> with a success handler callback containing the logic for what should happen if a promise resolves</li>
+										<li>We use <span class="simple-code">.catch()</span> with a failure handler callback containing the logic for what should happen if a promise rejects</li>
+										<li>Promise composition enables us to write complex, asynchronous code that's still readable. We do this by chaining multiple <span class="simple-code">.then()</span> and <span class="simple-code">.catch()</span></li>
+										<li>To use promise composition correctly, we have to remember to return promises constructed within a <span class="simple-code">.then()</span></li>
+										<li>We should chain multiple promises rather than nesting them</li>
+										<li>To take advantage of concurrency, we can use <span class="simple-code">Promise.all()</span></li>
+									</ul>
+	              </p>
+	            </section>
+
+	            <section id="js-async-await">
+              	<h2 class="section-title">Async...Await</h2>
+
+              	<p>Since ES8, <span class="simple-code">async…await</span> was introduced and allows a better readability and scalability of promises and generators. Async kw is used to write function that handle asynchronous actions. Async kw allows to creates functions that return a Promise:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-async-await-code" class="language-javascript">async function myFunc() {
+  // Function body here
+};
+
+myFunc();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-async-await-code">COPY</button>
+	              </div>
+
+	              <p>Or:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-async-await2-code" class="language-javascript">const myFunc = async () => {
+  // Function body here
+};
+
+myFunc();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-async-await2-code">COPY</button>
+	              </div>
+
+	              <p>Async functions always return a promise. It will return in 3 possible ways:
+	              	<ul>
+	              		<li>If there is nothing returned, it will return a promise with a resolved value of undefined</li>
+	              		<li>If there is a non-promise value returned, it will return a promise resolved to that value</li>
+	              		<li>If a promise is returned it will simply return that promise</li>
+	              	</ul>
+	              </p>
+	              <p>So, a normal promise written like that:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-async-await3-code" class="language-javascript">function withConstructor(num){
+  return new Promise((resolve, reject) => {
+    if (num === 0){
+      resolve('zero');
+    } else {
+      resolve('not zero');
+    }
+  })
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-async-await3-code">COPY</button>
+	              </div>
+
+	              <p>Or can be written with the <span class="simple-code">async</span> kw like that:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-async-await4-code" class="language-javascript">async function with Async(num) {
+  if (num === 0) {
+    return 'zero';
+  } else {
+    return 'not zero';
+  }
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-async-await4-code">COPY</button>
+	              </div>
+
+	              <p><b>The Await kw:</b> Without the <span class="simple-code">await</span> kw, an async function don't do much. The <span class="simple-code">await</span> kw can only be used inside an async function. It is an operator: it returns the resolved value of a promise. Await will halts or pauses the execution of the async function until a given promise is resolved. The <span class="simple-code">await</span> kw will causes an async function to pause execution until the desired promise is resolved.</p>
+	              <u>Ex:</u>
+
+	              <div class="code-block">
+	                <pre><code id="js-await-kw-code" class="language-javascript">async function asyncFuncExample(){
+  let resolvedValue = await myPromise();
+  console.log(resolvedValue);
+}
+
+asyncFuncExample(); // Prints: I am resolved now!</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-await-kw-code">COPY</button>
+	              </div>
+
+	              <p>
+	              	<ul>
+	              		<li>Inside <span class="simple-code">asyncFuncExample()</span> we use the await to halt our execution until <span class="simple-code">myPromise()</span> is resolved</li>
+	              		<li>We moreover assign <span class="simple-code">myPromise()</span> resolved value to the variable resolved value</li>
+	              		<li>Then we log <span class="simple-code">resolvedValue</span> to the console</li>
+	              		<li>(The resolvedValue of myPromise is "I am resolved now!")</li>
+	              	</ul>
+
+	              It is particulary usefull when you do dependent promises (a serie of asynchronous action).
+	              </p>
+
+	              <p>Indeed, with native promises you will do a chain of <span class="simple-code">.then()</span> functions. Like that:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-then3-code" class="language-javascript">function nativePromiseVersion() {
+	returnsFirstPromise()
+	.then((firstValue) => {
+		console.log(firstValue);
+		return returnsSecondPromise(firstValue);
+	})
+	.then((secondValue) => {
+		console.log(secondValue);
+	});
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-then3-code">COPY</button>
+	              </div>
+
+	              <p>Whereas with <span class="simple-code">async…wait</span>:</p>
+
+	              <div class="code-block">
+	                <pre><code id="js-async-await5-code" class="language-javascript">async function asyncAwaitVersion() {
+ let firstValue = await returnsFirstPromise();
+ console.log(firstValue);
+ let secondValue = await returnsSecondPromise(firstValue);
+ console.log(secondValue);
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-async-await5-code">COPY</button>
+	              </div>
+
+	              <p>The synthax of using async with an arrow function is the following: <span class="simple-code">const getData = async () => {};</span></p>
+	            </section>
+
+	            <section id="js-try-catch">
+              	<h2 class="section-title">Try...Catch</h2>
+
+              	<p>When <span class="simple-code">.catch()</span> is used with a long promise chain, there is no indication of where in the chain the error was thrown. This make debugging challenging.</p>
+              	<p>With <span class="simple-code">async…await</span>, we use the <span class="simple-code">try…catch</span> statements for error handling:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-try-catch-code" class="language-javascript">async function usingTryCatch() {
+ try {
+   let resolveValue = await asyncFunction('thing that will fail');
+   let secondValue = await secondAsyncFunction(resolveValue);
+ } catch (err) {
+   // Catches any errors in the try block
+   console.log(err);
+ }
+}
+
+usingTryCatch();</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-try-catch-code">COPY</button>
+	              </div>
+
+	              <p>>>> Here we will "try" what is in the body of the <span class="simple-code">try</span> kw. If any of the promised will reject, the <span class="simple-code">catch</span> body will be executed, with the <span class="simple-code">err</span> argument being the reject value of the promise that was rejected.</p>
+	            </section>
+
+	            <section id="js-independent-promises">
+              	<h2 class="section-title">Handling Independent Promises</h2>
+
+              	<p>If we have several independent promises that we need to await there is a trick. Indeed, we don't want to wait promise1 to be solved, then promise2 to be solved, and then do our resolution…</p>
+              	<p>We want both promise to run (at the same time) and then, when both are solved, we want our resolution. We can do it like that:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-independent-promises-code" class="language-javascript">async function concurrent() {
+ const firstPromise = firstAsyncThing();
+ const secondPromise = secondAsyncThing();
+console.log(await firstPromise, await secondPromise);
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-independent-promises-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-await-promises-all">
+              	<h2 class="section-title">Await Promise.all()</h2>
+
+              	<p>We can also use the await <span class="simple-code">Promise.all()</span> to wait for multiple promises. Indeed the <span class="simple-code">Promise.all()</span> take an array of promise as argument and will resolve when all of these promise  are resolved. So if we put <span class="simple-code">await</span> before it, it will await all those promises to be solved before going further.</p>
+              	<u>Ex:</u>
+
+              	<div class="code-block">
+	                <pre><code id="js-await-promises-all-code" class="language-javascript">async function asyncPromAll() {
+  const resultArray = await Promise.all([asyncTask1(), asyncTask2(), asyncTask3(), asyncTask4()]);
+  for (let i = 0; i < resultArray.length; i++){
+    console.log(resultArray[i]); 
+  }
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-await-promises-all-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-http-requests">
+              	<h2 class="section-title">HTTP Requests</h2>
+
+              	<p>One of JavaScript's greatest assits is its non-blocking properties, or that it is an asynchronous language. It uses an event loop to handle asynchronous function calls: when a program is run, function calls are made and added to a stack. The functions that make requests that need to wait for servers to respond then get sent to a separate queue. Once the stack has cleared, then the functions in the queue are executed.</p>
+              	<u>For example:</u>
+
+              	<div class="code-block">
+	                <pre><code id="js-http-requests-code" class="language-javascript">console.log('First message!');
+setTimeout(() => {
+   console.log('This message will always run last...');
+}, 0);
+console.log('Second message!');</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-http-requests-code">COPY</button>
+	              </div>
+
+	              <p>The first and second message are run from the stack. The one in <span class="simple-code">setTimeout()</span> is added to the queue so it will always run after the others. (Even if the <span class="simple-code">setTimeout()</span> is set to 0 milliseconds.</p>
+	            </section>
+
+	            <section id="js-xhr-get-requests">
+              	<h2 class="section-title">XHR GET Requests</h2>
+
+              	<p>The AJAX GET request allows you to retrieve data from a server. Boilerplate of an AJAX GET request using an XMLHttpRequest:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-xhr-get-requests-code" class="language-javascript">const xhr = new XMLHttpRequest();
+const url = 'https://api-to-call.com/endpoint'
+
+xhr.responseType = 'json';
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+	return xhr.response;
+	}
+}
+
+xhr.open('GET', url)
+xhr.send()</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-xhr-get-requests-code">COPY</button>
+	              </div>
+
+	              <p>More info:
+	              	<ul>
+	              		<li><a href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/requests-i/exercises/xhr-get-requests-ii" target="_blank">Code Academy course</a></li>
+	              		<li><a href="https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/diagrams/XHR+GET+diagram.svg" target="_blank">Diagram</a></li>
+	              	</ul>
+	              </p>
+	            </section>
+
+	            <section id="js-xhr-post-requests">
+              	<h2 class="section-title">XHR POST Requests</h2>
+
+              	<p>The AJAX POST request allows you to send data to a server. Boilerplate of an AJAX POST request using an XMLHttpRequest:</p>
+
+              	<div class="code-block">
+	                <pre><code id="js-xhr-post-requests-code" class="language-javascript">const xhr = new XMLHttpRequest();
+const url = 'https://api-to-call.com/endpoint'
+const data = JSON.stringify({id: '200'});
+
+xhr.responseType = 'json'
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    return xhr.response;
+  }
+}
+
+xhr.open('POST', url);
+xhr.send(data);</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-xhr-post-requests-code">COPY</button>
+	              </div>
+	            </section>
+
+	            <section id="js-fetch-function">
+              	<h2 class="section-title">The Fetch Function</h2>
+
+              	<ul>
+              		<li>It creates a request object that contains relevant information that an API needs</li>
+              		<li>It sends that request object to the API endpoint provided</li>
+              		<li>It Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back</li>
+              	</ul>
+
+              	<p><b>Boilerplate of a fetch GET request:</b></p>
+
+              	<div class="code-block">
+	                <pre><code id="js-fetch-get-requests-code" class="language-javascript">fetch('https://api-to-call.com/endpoint').then((response) => {
+  if (response.ok) {
+    return response.json();
+  }
+  throw new Error('Request failed!');
+},
+  (networkError) => {
+  console.log(networkError.message);
+})
+
+.then((jsonResponse) => {
+  return jsonResponse
+});</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-fetch-get-requests-code">COPY</button>
+	              </div>
+
+	              <ol>
+	              	<li>You call the <span class="simple-code">fetch()</span> function and pass it the URL of your API request</li>
+	              	<li>You chain a <span class="simple-code">.then()</span> method and pass it the success callback arrow function as its first argument</li>
+	              	<li>This success callback function takes one parameter <span class="simple-code">response</span></li>
+	              	<li>Inside the response callback function you check if the ok property of response (response.ok) is truly (inside a if statement)</li>
+	              	<li>If it is truly you return <span class="simple-code">response.json()</span></li>
+	              	<li>Else, you will throw a new error message if <span class="simple-code">response.ok</span> is falsy</li>
+	              	<li>You add your second argument ( called the "failure hander") to your <span class="simple-code">.then()</span> function. It will be a callback function that takes a single parameter <span class="simple-code">networkError</span> and log <span class="simple-code">networkError.message</span> to the console</li>
+	              	<li>You chain another <span class="simple-code">.then()</span> method to the first one (that will be executed only if the first one has finished and doesn't throw an error)</li>
+	              	<li>You pass it a callback function that take <span class="simple-code">jsonResponse</span> as its parameter and return <span class="simple-code">jsonResponse</span></li>
+	              </ol> 
+	              <p>>>> Check the <a href="https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/diagrams/fetch+GET+diagram.svg" target="_blank">diagram here</a></p>
+
+	              <p><b>Boilerplate of a fetch POST request:</b></p>
+
+              	<div class="code-block">
+	                <pre><code id="js-fetch-post-requests-code" class="language-javascript">fetch('https://api-to-call.com/endpoint', {
+  method: 'POST',
+  body: JSON.stringify({id: '200'})
+}).then((response) => {
+  if(response.ok) {
+    return response.json();
+  }
+  throw new Error('Request failed!');
+},
+(networkError) => {
+  console.log(networkError.message);      
+})
+.then((jsonResponse) => {
+  return jsonResponse;
+});</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-fetch-post-requests-code">COPY</button>
+	              </div>
+
+	              <p>(It is similar to the GET request, only that the initial call takes two arguments: an endpoint and an object, instead of just one).</p>
+							</section>
+
+							<section id="js-fetch-with-async-await-function">
+              	<h2 class="section-title">Fetch with Async and await KW</h2>
+
+              	<p>You can also use the <span class="simple-code">async, await, try</span> kw with fetch to use GET and POST XHR requests:</p>
+
+              	<b>GET:</b>
+
+              	<div class="code-block">
+	                <pre><code id="js-fetch-get-with-async-await-function-code" class="language-javascript">const getData = async () => {
+  try {
+   const response = await fetch('https://api-to-call.com/endpoint');
+    if(response.ok) {
+      const jsonResponse = await response.json();
+      return jsonResponse
+    } throw new Error('Request failed!')
+    
+  } catch(error) {
+    console.log(error);
+  }
+};</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-fetch-get-with-async-await-function-code">COPY</button>
+	              </div>
+
+	              <b>POST:</b>
+
+              	<div class="code-block">
+	                <pre><code id="js-fetch-post-with-async-await-function-code" class="language-javascript">const getData = async () => {
+  try {
+    const response = await fetch('https://api-to-call.com/endpoint', {
+      method: 'POST',
+      body: JSON.stringify({id: 200})
+      });
+    if(response.ok) {
+      const jsonResponse = await response.json();
+      return jsonResponse
+    } throw new Error('Request failed!')
+  } catch(error) {
+    console.log(error);
+  }
+}</code></pre>
+	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-fetch-post-with-async-await-function-code">COPY</button>
+	              </div>
+	            
+
+
+
+
+          </div>
+
+
+          <div id="terminal-container">
+            <h1>TERMINAL</h1>
+
+            <section id="terminal">
+              <p>Terminal commands with Linux Bqsh SHell (Unbuntu) for windows installed</p>
+              <ul>
+                <li><b>wsl</b> = launch Ubuntu terminal inside CMD</li>
+                <li><b>pwd</b> = show current directory</li>
+                <li><b>ls</b> = list current available directories</li>
+                <li><b>cd folder_name </b> = change directory to [folder name]</li>
+                <li><b>cd</b> = go back at the root</li>
+                <li><b>cd..</b> = will go up one directory</li>
+                <li><b>mkdir folder_name</b> = create a new folder</li>
+                <li><b>touch file_name.xx</b> = create a new file</li>
+                <li><b>mv old_file_name.xx new_file_name.xx</b> = rename a file</li>
+                <li><b>mv file_name.xx /path/file_name.xx </b> = will move the file into the new path</li>
+                <li><b>cat file_name.xx</b> = print the content of the file</li>
+                <li><b>rm file_name.xx</b> = remove the file</li>
+                <li><b>git log</b> = see all git historic project</li>
+              </ul>
+            </section>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="prism.js"></script>
+
+    <script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+  </body>
+</html>
