@@ -20,14 +20,14 @@
 
     <div class="container">
       <div class="row justify-content-between">
-        
+
         <!-- left nav -->
         <aside class="col-md-3">
           <nav class="navbar sticky sticky-top navbar-expand-md navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-burger" aria-controls="navbar-burger" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar-burger"> 
+            <div class="collapse navbar-collapse" id="navbar-burger">
               <ul id="page-nav" class="navbar-nav flex-column navbar-dark nav-vertical">
                 <li class="nav-item">
                   <a class="nav-link collapsed" data-toggle="collapse" href="#menu-html" role="button" aria-expanded="false" aria-controls="menu-html">HTML</a>
@@ -240,7 +240,7 @@
                   <a class="nav-link" href="#terminal" role="button">TERMINAL</a>
                 </li>
               </ul>
-            </div>  
+            </div>
           </nav>
         </aside>
 
@@ -257,11 +257,11 @@
                 <pre><code id="html-naming-code" class="language-html">&lt;tag attribute(name)="attribute(value)"&gt; content &lt;/tag&gt;</code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#html-naming-code">COPY</button>
               </div>
-            </section> 
+            </section>
 
             <section id="html-boilerplate">
               <h2 class="section-title">HTML Boilerplate</h2>
-                
+
               <div class="code-block">
                 <pre><code id="html-boilerplate-code" class="language-markup">&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
@@ -314,14 +314,14 @@
                 <button class="btn btn-light copy-btn" data-clipboard-target="#html-boilerplate-code">
                  COPY
                 </button>
-              
+
               </div>
 
             </section>
 
             <section id="html-tables">
               <h2 class="section-title">HTML Tables</h2>
-                
+
               <div class="code-block">
                 <pre><code id="html-tables-code" class="language-markup">&lt;table&gt;
    &lt;thead&gt; &lt;!-- table head --&gt;
@@ -347,19 +347,19 @@
                 <button class="btn btn-light copy-btn" data-clipboard-target="#html-tables-code">
                  COPY
                 </button>
-              
+
               </div>
 
             </section>
 
             <section id="html-forms">
               <h2 class="section-title">HTML Forms</h2>
-              
+
               <p>A form is defined by a <span class="simple-code">&lt;form&gt;</span> tag. Inside you define :
                   <ul>
                     <li>An <span class="simple-code">action</span> = where to send the info</li>
                     <li>A <span class="simple-code">method</span> = what to do when the form is submitted</li>
-                  </ul> 
+                  </ul>
               </p>
               <div class="code-block">
                 <pre><code id="html-forms-code" class="language-markup">&lt;form action="/example.html" method="POST"&gt;
@@ -409,7 +409,7 @@
 &lt;/form&gt;</code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#html-forms-label-code">COPY</button>
                 </div>
-                <br>                
+                <br>
                 <p><span class="simple-code">&lt;select&gt;</span> tag allows you to create dropdown lists. Inside the select tags you need <span class="simple-code">&lt;options&gt;</span> tags each with a <span class="simple-code">value</span> with your different options:
                   <ul>
                     <li>The <span class="simple-code">value</span> of<span class="simple-code">&lt;option&gt;</span> is the text that will be send to the form</li>
@@ -483,24 +483,24 @@
 
             <section id="css-units">
               <h2 class="section-title">CSS Units</h2>
-              
+
               <p><b>vh</b> = Viewport height (screen height)
                   <ul>
                     <li>1vh = 1% of viewport height</li>
                     <li>100vh = 100% of viewport height</li>
-                  </ul> 
+                  </ul>
               </p>
 
               <p><b>vw</b> = Viewport width (screen width)
                   <ul>
                     <li>1vh = 1% of viewport width</li>
                     <li>100vh = 100% of viewport width</li>
-                  </ul> 
+                  </ul>
               </p>
               <p><b>em</b> = Relative to the font-size of the element (2em = 2 times the size of the current font)</p>
               <p><b>rem</b> = Relative to the font-size of root element (2em = 2 times the size of the root font)</p>
               <p><b>%</b> = Relative to the parent element</p>
-            </section> 
+            </section>
 
             <section id="css-import">
               <h2 class="section-title">Import</h2>
@@ -545,19 +545,19 @@
             url('background.jpg')</code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#css-gradient-ex-code">COPY</button>
               </div>
-            </section>  
+            </section>
 
             <section id="css-positionning">
               <h2 class="section-title">Positionning in CSS</h2>
               <p>By default, blocks will stack on top of each other. Then the <span class="simple-code">position</span> propriety can take those values:</p>
               <ul>
-                <li><span class="simple-code">static</span> (default)</li> 
-                <li><span class="simple-code">relative</span>: relative to his "static" / "normal" / "default" position. (It is not relative to its parent element). So if I then use a proprieties like <span class="simple-code">top</span> or <span class="simple-code">left</span>, it will move the element from the top and from the left of his default static position. It is also used to pin an element on the page (so that its children elements can be <span class="simple-code">positioned: absolute</span> relatively to it)</li> 
+                <li><span class="simple-code">static</span> (default)</li>
+                <li><span class="simple-code">relative</span>: relative to his "static" / "normal" / "default" position. (It is not relative to its parent element). So if I then use a proprieties like <span class="simple-code">top</span> or <span class="simple-code">left</span>, it will move the element from the top and from the left of his default static position. It is also used to pin an element on the page (so that its children elements can be <span class="simple-code">positioned: absolute</span> relatively to it)</li>
                 <li><span class="simple-code">absolute</span>: is absolute compared to its 1st positioned parent. If there are no positioned parent, it will be absolute compared to the body. So you basically remove it from the flow (other elements of the page will ignore it and act like it was not here)</li>
               </ul>
               <p>So a common pattern is:</p>
               <ul>
-                <li>I create a first div with <span class="simple-code">position: relative</span> (not because I want to move it but just because I want to pin it)</li> 
+                <li>I create a first div with <span class="simple-code">position: relative</span> (not because I want to move it but just because I want to pin it)</li>
                 <li>I put an inner div inside my div with <span class="simple-code">position: absolute</span>. So it will be positioned relatively to my parent div. And now I can use left and right to position it within my div</li>
               </ul>
 
@@ -592,7 +592,7 @@ right: 10px;
             <section id="css-flexbox">
               <h2 class="section-title">Flexbox: to align</h2>
               <ul>
-                <li>Your flexbox needs the <span class="simple-code">display: flex</span> property</li> 
+                <li>Your flexbox needs the <span class="simple-code">display: flex</span> property</li>
                 <li>Flexbox property:</li>
                   <ul>
                     <li><span class="simple-code">Justify-content: space-around</span>: will distributes items equally horizontally</li>
@@ -642,7 +642,7 @@ flex: 0 0 200px;
 
             <section id="css-box-model">
               <h2 class="section-title">The Box Model</h2>
-              
+
               <img src="img/diagram-boxmodel.svg" alt="">
               <br><br>
               <p>Border style values : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values" target="_blank">Moz doc</a></p>
@@ -662,7 +662,7 @@ flex: 0 0 200px;
 }</code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#css-margin-collapse-code">COPY</button>
               </div>
-            
+
               <p>>>> There will be 40px of horizontal space between those two elements.</p>
               <p>On the contrary, vertical margin collapse. It means that they are packed together and thus the larger of the two vertical margins will set the distance between two elements:</p>
               <div class="code-block">
@@ -693,7 +693,7 @@ flex: 0 0 200px;
             <section id="css-resetting-default">
               <h2 class="section-title">Resetting Default</h2>
               <p>All web browsers have default stylesheet values (known as "user agent"). Often set a default value for padding and margin for example. So it is useful to reset those values with the <span class="simple-code">*</span> propriety: </p>
-              
+
               <div class="code-block">
                 <pre><code id="css-resetting-default-code" class="language-css">* {
   margin: 0;
@@ -722,12 +722,12 @@ flex: 0 0 200px;
               </ul>
               <img class="centered-img" style="width:100%" src="img/border-box-model.png" class="centered-img" alt="">
               <br>
-              <p>Overall it makes that the width and height of your element is not affected by the padding and border.</p> 
+              <p>Overall it makes that the width and height of your element is not affected by the padding and border.</p>
             </section>
 
             <section id="css-visibility">
               <h2 class="section-title">Display None VS Visibility Hidden</h2>
-              <p>An element with <span class="simple-code">display: none</span> will be completely removed from the web page. An element with <span class="simple-code">visibility: hidden</span>, however, will not be visible on the web page, but the space reserved for it will.</p> 
+              <p>An element with <span class="simple-code">display: none</span> will be completely removed from the web page. An element with <span class="simple-code">visibility: hidden</span>, however, will not be visible on the web page, but the space reserved for it will.</p>
             </section>
 
             <section id="css-rgb">
@@ -736,7 +736,7 @@ flex: 0 0 200px;
               <p><b>RGBA</b> = red, green, blue, alpha. Alows you to add a forth value between 0.0 and 1.0 define the transparency/opacity of your color. So <span class="simple-code">color:transparent</span> = <span class="simple-code">color: rgba(0, 0, 0, 0)</span></p>
               <p>In RGB system, if you put the same value for the 3 colors, you are on the grey scale. At 0 you are totally black and at 255 you are totally white. And in between you have greyscales:</p>
               <img class="centered-img" style="width: 70%" src="img/rgb-greyscale.png" alt="">
-            </section>  
+            </section>
 
             <section id="css-hsl">
               <h2 class="section-title">HSL Color Model</h2>
@@ -1043,7 +1043,7 @@ footer {
                   <li><span class="simple-code">dense</span> = invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added</li>
                   <li>You can pair <span class="simple-code">row</span> and <span class="simple-code">column</span> with <span class="simple-code">dense</span> = <span class="simple-code">grid-auto-flow: row dense;</span></li>
                 </ul>
-            </section>          
+            </section>
           </div>
 
           <div id="javascript-container">
@@ -1119,10 +1119,10 @@ console.log(`I own a pet ${myPet}.`);
 
               <div class="code-block">
                 <pre><code id="js-truthy-code" class="language-javascript">let numberOfApples = 0;
-if (numberOfApples){ 
+if (numberOfApples){
    console.log('Let us eat apples!');
-} else { 
-   console.log('No apples left!'); } // Outputs "No Apples Left !" 
+} else {
+   console.log('No apples left!'); } // Outputs "No Apples Left !"
 </code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#js-truthy-code">COPY</button>
               </div>
@@ -1165,7 +1165,7 @@ functionName();
               <p>Since ES6 you can define a default value of a function parameter</p>
 
               <div class="code-block">
-                <pre><code id="js-function-default-parameter-code" class="language-javascript">function greeting (name = 'stranger') { 
+                <pre><code id="js-function-default-parameter-code" class="language-javascript">function greeting (name = 'stranger') {
   console.log(`Hello, ${name}!`);
 }
 // Will return "Stranger" if name is not defined
@@ -1331,7 +1331,7 @@ i = 0
 
 do {
  sum = sum + grades[i];
-  i++; 
+  i++;
 } while (i < grades.length);
 // Output 66 >> (10 + 5 + 13 + 20 + 18)
 </code></pre>
@@ -1355,7 +1355,7 @@ const variableA = functionA; // >> You do it without parenthesis
               </div>
 
               <p>And so you cans then call the function by calling the variable like that: <span class="simple-code">variableA();</span> <<< You can even pass arguments to it.</p>
-              <p>In JS, functions, like variables, are "first class objects", so like other objects you can assign proprieties to it like : 
+              <p>In JS, functions, like variables, are "first class objects", so like other objects you can assign proprieties to it like :
                 <ul>
                   <li><span class="simple-code">.length();</span></li>
                   <li><span class="simple-code">.name();</span></li>
@@ -1406,7 +1406,7 @@ return number * 10 ;
               <u>Ex:</u>
               <div class="code-block">
                 <pre><code id="js-filter-code" class="language-javascript">const mots = ['chien', 'chat', 'poussin', 'trotinette', 'hiiiibou'] ;
-const petitsMots = mots.filter(mot => { 
+const petitsMots = mots.filter(mot => {
 return mot.length < 6 ;
 }); // petitsMots returns ['chien', 'chat']
 </code></pre>
@@ -1419,7 +1419,7 @@ return mot.length < 6 ;
               <u>Ex:</u>
               <div class="code-block">
                 <pre><code id="js-findindex-code" class="language-javascript">const numbers = [40, 500, 230, 4, 9, 1] ;
-const smallNumbers = numbers.findIndex(number => { 
+const smallNumbers = numbers.findIndex(number => {
 return number < 10 ;
 });
 </code></pre>
@@ -1433,7 +1433,7 @@ return number < 10 ;
               <u>Ex:</u>
               <div class="code-block">
                 <pre><code id="js-reduce-code" class="language-javascript">const numbers = [1, 2, 4, 10];
-const summedNums = numbers.reduce((accumulator, currentValue) => { 
+const summedNums = numbers.reduce((accumulator, currentValue) => {
 return accumulator + currentValue
 });
 </code></pre>
@@ -1454,7 +1454,7 @@ return accumulator + currentValue
               <u>Ex:</u>
               <div class="code-block">
                 <pre><code id="js-reduce-2-code" class="language-javascript">const numbers = [1, 2, 4, 10];
-const summedNums = numbers.reduce((accumulator, currentValue) => { 
+const summedNums = numbers.reduce((accumulator, currentValue) => {
 return accumulator + currentValue
  }, 100)
 </code></pre>
@@ -1509,10 +1509,10 @@ color : 'silver'
               <p>When you add a function to an object, the value of the property is an anonymus function:</p>
 
               <div class="code-block">
-                <pre><code id="js-objects-function-code" class="language-javascript">const alienShip = { 
-	invade: function () { 
-	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'); 
-	} 
+                <pre><code id="js-objects-function-code" class="language-javascript">const alienShip = {
+	invade: function () {
+	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.');
+	}
 };
 </code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#js-objects-function-code">COPY</button>
@@ -1521,10 +1521,10 @@ color : 'silver'
 							<p>Or shorter like that:</p>
 
               <div class="code-block">
-                <pre><code id="js-objects-function2-code" class="language-javascript">const alienShip = { 
-	invade () { 
-	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.'); 
-	} 
+                <pre><code id="js-objects-function2-code" class="language-javascript">const alienShip = {
+	invade () {
+	console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.');
+	}
 };
 </code></pre>
                 <button class="btn btn-light copy-btn" data-clipboard-target="#js-objects-function2-code">COPY</button>
@@ -1594,20 +1594,20 @@ let remotelyDisable = obj => {
               <div class="code-block">
                 <pre><code id="js-for-in2-code" class="language-javascript">let spaceship = {
 	crew: {
-	  	captain: { 
+	  	captain: {
 	    	name: 'Lily'
 	    	},
-	    'chief officer': { 
+	    'chief officer': {
 	    	name: 'Dan'
 	    	},
-	    medic: { 
+	    medic: {
 	    	name: 'Clementine'
 	      },
 	    translator: {
 	    	name: 'Shauna'
 	      }
-	}	
-}; 
+	}
+};
 
 for (let crewMember in spaceship.crew) {
   console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
@@ -1725,13 +1725,13 @@ person.age = 40; // Now console.log(person._age); will return 40
 
 								<div class="code-block">
 	                <pre><code id="js-factory-functions-code" class="language-javascript">const monsterFactory = (name, age, energySource, catchPhrase) => {
-  return { 
+  return {
     name: name,
-    age: age, 
+    age: age,
     energySource: energySource,
     scare() {
       console.log(catchPhrase);
-    } 
+    }
   }
 };</code></pre>
 	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-code">COPY</button>
@@ -1753,9 +1753,9 @@ person.age = 40; // Now console.log(person._age); will return 40
 	              <p>Since ES6 you have a shortcut. Because the key and the value of the proprieties where always the same, you can simplify and write only the key, like that:</p>
 	              <div class="code-block">
 	                <pre><code id="js-factory-functions-shortcute-code" class="language-javascript">const monsterFactory = (name, age) => {
-  return { 
+  return {
     name,
-    age 
+    age
   }
 };</code></pre>
 	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-factory-functions-shortcute-code">COPY</button>
@@ -1773,7 +1773,7 @@ person.age = 40; // Now console.log(person._age); will return 40
    preference: {
 		day: 'stay inside',
 		night: 'satisfy appetite'
-	} 
+	}
 };
 
 const residence = vampire.residence;
@@ -1896,7 +1896,7 @@ console.log(newRobot);
 
 // It will create this object:
 
-Dog { 
+Dog {
 _name: 'Halley',
 _behavior: 0
 }</code></pre>
@@ -2190,7 +2190,7 @@ import GlutenFree from './menu';</code></pre>
   if (someCondition) {
       resolve('I resolved!');
   } else {
-      reject('I rejected!'); 
+      reject('I rejected!');
   }
 }
 const myFirstPromise = new Promise(executorFunction);</code></pre>
@@ -2570,7 +2570,7 @@ console.log(await firstPromise, await secondPromise);
 	                <pre><code id="js-await-promises-all-code" class="language-javascript">async function asyncPromAll() {
   const resultArray = await Promise.all([asyncTask1(), asyncTask2(), asyncTask3(), asyncTask4()]);
   for (let i = 0; i < resultArray.length; i++){
-    console.log(resultArray[i]); 
+    console.log(resultArray[i]);
   }
 }</code></pre>
 	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-await-promises-all-code">COPY</button>
@@ -2685,7 +2685,7 @@ xhr.send(data);</code></pre>
 	              	<li>You add your second argument ( called the "failure hander") to your <span class="simple-code">.then()</span> function. It will be a callback function that takes a single parameter <span class="simple-code">networkError</span> and log <span class="simple-code">networkError.message</span> to the console</li>
 	              	<li>You chain another <span class="simple-code">.then()</span> method to the first one (that will be executed only if the first one has finished and doesn't throw an error)</li>
 	              	<li>You pass it a callback function that take <span class="simple-code">jsonResponse</span> as its parameter and return <span class="simple-code">jsonResponse</span></li>
-	              </ol> 
+	              </ol>
 	              <p>>>> Check the <a href="https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/diagrams/fetch+GET+diagram.svg" target="_blank">diagram here</a></p>
 
 	              <p><b>Boilerplate of a fetch POST request:</b></p>
@@ -2701,7 +2701,7 @@ xhr.send(data);</code></pre>
   throw new Error('Request failed!');
 },
 (networkError) => {
-  console.log(networkError.message);      
+  console.log(networkError.message);
 })
 .then((jsonResponse) => {
   return jsonResponse;
@@ -2727,7 +2727,7 @@ xhr.send(data);</code></pre>
       const jsonResponse = await response.json();
       return jsonResponse
     } throw new Error('Request failed!')
-    
+
   } catch(error) {
     console.log(error);
   }
@@ -2754,7 +2754,7 @@ xhr.send(data);</code></pre>
 }</code></pre>
 	                <button class="btn btn-light copy-btn" data-clipboard-target="#js-fetch-post-with-async-await-function-code">COPY</button>
 	              </div>
-	            
+
 
 
 
@@ -2766,21 +2766,25 @@ xhr.send(data);</code></pre>
             <h1>TERMINAL</h1>
 
             <section id="terminal">
-              <p>Terminal commands with Linux Bqsh SHell (Unbuntu) for windows installed</p>
+              <p>Terminal commands with Linux (Unbuntu)</p>
               <ul>
-                <li><b>wsl</b> = launch Ubuntu terminal inside CMD</li>
+                <li>(<b>wsl</b> = launch Ubuntu terminal inside windows CMD)</li>
                 <li><b>pwd</b> = show current directory</li>
-                <li><b>ls</b> = list current available directories</li>
+                <li><b>ls</b> = list all current available directories</li>
+                <li><b>ll</b> = list all current available directories with more details</li>
                 <li><b>cd folder_name </b> = change directory to [folder name]</li>
                 <li><b>cd</b> = go back at the root</li>
                 <li><b>cd..</b> = will go up one directory</li>
-                <li><b>mkdir folder_name</b> = create a new folder</li>
+                <li><b>cd...</b> = will go up two directory</li>
+                <li><b>cd </b><span class="key-stroke">TAB</span> = shortcut to show all available folders and directly go to it</li>
+                <li><b>mkdir folder_name</b> = create a new folder (never put spaces in folder names, otherwise you create 2 folders)</li>
                 <li><b>touch file_name.xx</b> = create a new file</li>
                 <li><b>mv old_file_name.xx new_file_name.xx</b> = rename a file</li>
-                <li><b>mv file_name.xx /path/file_name.xx </b> = will move the file into the new path</li>
+                <li><b>mv file_name.xx /path/file_name.xx </b> = will move the file into the new path. Also used to rename a file/folder</li>
                 <li><b>cat file_name.xx</b> = print the content of the file</li>
-                <li><b>rm file_name.xx</b> = remove the file</li>
-                <li><b>git log</b> = see all git historic project</li>
+                <li><b>rm file_name.xx</b> = remove the file (<i class="fas fa-exclamation-triangle"></i> permanently!)</li>
+                <li><b>rm -rf folder_name</b> = remove the folder (<i class="fas fa-exclamation-triangle"></i> permanently!)</li>
+                <li><b>stt</b> = open current folder in sublime text (not native function)</li>
               </ul>
             </section>
           </div>

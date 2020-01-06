@@ -25,7 +25,7 @@ a:hover {
 section {
 	margin-bottom: 50px;
 }
-          
+
 
 
 /* Nav */
@@ -118,9 +118,9 @@ section {
 .cool-scrollbar::-webkit-scrollbar {
 	width: 2px;
 }
- 
+
 .cool-scrollbar::-webkit-scrollbar-thumb {
-  background: #4a4a4a; 
+  background: #4a4a4a;
 }
 
 .section-title {
@@ -159,4 +159,13 @@ section {
 
 .code-block {
 	margin-bottom: 30px;
+}
+
+.key-stroke {
+  font-size: 12px;
+  color: #8c8a8a;
+  background-color: #eee;
+  border: 1px solid #8c8a8a;
+  padding: 2px;
+  border-radius: 4px;
 }
